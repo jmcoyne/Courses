@@ -1,25 +1,132 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B23" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2pp-wW-ls3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="umC-i8-aLf">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nPZ-lx-dne" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="7l3-Id-0dM"/>
+                        <viewControllerLayoutGuide type="bottom" id="QVL-Ol-CiJ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="wIl-M0-i8M">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="email" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fgx-Z8-JSj">
+                                <rect key="frame" x="252" y="252" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="259" y="167" width="84" height="30"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="159" y="230" width="84" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PrT-EB-tnF">
+                                <rect key="frame" x="252" y="285" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="259" y="185" width="84" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hca-qE-sKA">
+                                <rect key="frame" x="258" y="358" width="85" height="30"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" red="0.51764705879999995" green="0.18823529410000001" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="259" y="258" width="84" height="30"/>
+                                </variation>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="mzingaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="NLI-pt-Sim">
+                                <rect key="frame" x="272" y="159" width="56" height="56"/>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="273" y="85" width="56" height="55"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="173" y="135" width="56" height="55"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.65098039215686276" green="0.792156862745098" blue="0.12549019607843137" alpha="0.39000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hca-qE-sKA" firstAttribute="top" secondItem="PrT-EB-tnF" secondAttribute="bottom" constant="43" id="1qK-sz-BOi">
+                                <variation key="heightClass=compact-widthClass=compact" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="PrT-EB-tnF" firstAttribute="top" secondItem="fgx-Z8-JSj" secondAttribute="bottom" constant="3" id="9wT-9K-aRJ"/>
+                            <constraint firstItem="fgx-Z8-JSj" firstAttribute="top" secondItem="NLI-pt-Sim" secondAttribute="bottom" constant="40" id="FmL-wb-IPY">
+                                <variation key="heightClass=compact" constant="27"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="PrT-EB-tnF" secondAttribute="centerX" constant="-0.5" id="KEu-jy-z6E"/>
+                            <constraint firstAttribute="centerX" secondItem="NLI-pt-Sim" secondAttribute="centerX" id="L2x-f8-jJS"/>
+                            <constraint firstItem="fgx-Z8-JSj" firstAttribute="width" secondItem="PrT-EB-tnF" secondAttribute="width" id="QZn-vY-Ehf"/>
+                            <constraint firstAttribute="centerY" relation="lessThanOrEqual" secondItem="fgx-Z8-JSj" secondAttribute="centerY" constant="33" id="S6m-rD-ift">
+                                <variation key="heightClass=compact" constant="40"/>
+                            </constraint>
+                            <constraint firstItem="PrT-EB-tnF" firstAttribute="top" secondItem="fgx-Z8-JSj" secondAttribute="bottom" constant="3" id="TCU-n5-Ukx"/>
+                            <constraint firstItem="NLI-pt-Sim" firstAttribute="top" secondItem="7l3-Id-0dM" secondAttribute="bottom" constant="95" id="UTj-6S-Uxb"/>
+                            <constraint firstItem="PrT-EB-tnF" firstAttribute="width" secondItem="Hca-qE-sKA" secondAttribute="width" id="VRU-G6-TaZ"/>
+                            <constraint firstAttribute="centerX" secondItem="fgx-Z8-JSj" secondAttribute="centerX" constant="-0.5" id="fb7-gW-gtO"/>
+                            <constraint firstAttribute="centerX" secondItem="Hca-qE-sKA" secondAttribute="centerX" constant="-0.5" id="hwF-Da-Iky"/>
+                            <constraint firstItem="QVL-Ol-CiJ" firstAttribute="top" secondItem="Hca-qE-sKA" secondAttribute="bottom" constant="112" id="ivG-IS-OpB">
+                                <variation key="heightClass=compact-widthClass=compact" constant="50"/>
+                            </constraint>
+                            <constraint firstItem="fgx-Z8-JSj" firstAttribute="centerX" secondItem="PrT-EB-tnF" secondAttribute="centerX" id="pY0-4D-CDq"/>
+                            <constraint firstItem="Hca-qE-sKA" firstAttribute="top" secondItem="PrT-EB-tnF" secondAttribute="bottom" constant="43" id="spc-wY-kxR"/>
+                            <constraint firstAttribute="centerY" secondItem="fgx-Z8-JSj" secondAttribute="centerY" constant="33" id="wWI-72-z70"/>
+                            <constraint firstItem="fgx-Z8-JSj" firstAttribute="top" secondItem="NLI-pt-Sim" secondAttribute="bottom" constant="37" id="wci-DT-WvN"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UTj-6S-Uxb"/>
+                                <exclude reference="pY0-4D-CDq"/>
+                                <exclude reference="wWI-72-z70"/>
+                                <exclude reference="wci-DT-WvN"/>
+                                <exclude reference="spc-wY-kxR"/>
+                                <exclude reference="ivG-IS-OpB"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="S6m-rD-ift"/>
+                                <include reference="ivG-IS-OpB"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="eMn-eg-kv2"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UuA-nx-DqI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1076" y="321"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="s8Q-lV-E6H">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2pp-wW-ls3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FOC-XJ-ink">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nPZ-lx-dne" kind="relationship" relationship="rootViewController" id="VT3-IR-G6S"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0AI-v3-cfH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264" y="321"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mzingaLogo" width="56" height="55"/>
+    </resources>
 </document>
