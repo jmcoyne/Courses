@@ -21,11 +21,13 @@ import UIKit
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    var authCallResults:NSDictionary?
+    
     lazy var defaultConfigObject: NSURLSessionConfiguration = {
         NSURLSessionConfiguration.defaultSessionConfiguration()
         }()
     lazy var defaultSession: NSURLSession = {
-        NSURLSession(configuration: self.defaultConfigObject)
+        return NSURLSession(configuration: self.defaultConfigObject)
         }()
     lazy var userDidAuthenticate:Bool = false
 
@@ -37,17 +39,17 @@ import UIKit
     }
 
     func httpPostWithCustomDelegate() {
-       var defaultConfigObject: NSURLSessionConfiguration = {
-            NSURLSessionConfiguration.defaultSessionConfiguration()
-            }()
+              // retries when connection has been terminated, avoids request if battery islowor wifi performance is not good
+        defaultConfigObject.discretionary = true
+        
         var defaultSession: NSURLSession = {
-            NSURLSession(configuration: defaultConfigObject)
+            NSURLSession(configuration: self.defaultConfigObject)
             }()
         var emailText = self.email.text
         var passwordText = self.password.text
         
         let urlLogin = NSURL(string: "https://test.lifeplot.com/api/v1/users/sign_in")!
-         var req = NSMutableURLRequest(URL: urlLogin)
+        var req = NSMutableURLRequest(URL: urlLogin)
         
         
         
@@ -56,37 +58,32 @@ import UIKit
         req.HTTPMethod = "post"
         var reqParamsData:NSData = reqParams.dataUsingEncoding(NSASCIIStringEncoding)!
         req.HTTPBody = reqParamsData
-        request(req)
-    }
-    func request(request: NSURLRequest) {
-        appendOutput("Sending request for \(request.URL)")
-        var task = self.defaultSession.dataTaskWithRequest(request) {
+        
+           NSLog("Sending request for \(req.URL)")
+        var task = self.defaultSession.dataTaskWithRequest(req) {
             (data, response, error) in
-            
+            var error: NSError?
             if error == nil {
-                if let httpResponse = response as? NSHTTPURLResponse {
-                    self.appendOutput("Received HTTP \(httpResponse.statusCode)")
+                let httpResponse = response as NSHTTPURLResponse
+                    NSLog("Received HTTP \(httpResponse.statusCode)")
+                if httpResponse.statusCode == 200 {
                     let body = NSString(data: data, encoding: NSUTF8StringEncoding)
-                    self.appendOutput("Response from \(request.URL): \(body)")
-                } else {
-                    self.appendOutput("Don't know how to handle response: \(response)")
+                    NSLog("Response from \(req.URL): \(body)")
+                    self.authCallResults = NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments, error: &error) as? NSDictionary
+                    NSLog("Auth Call results = %@", self.authCallResults!);
+                   // NSLog("Response:%@ %@\n", response, error);
+                                   } else {
+                    NSLog("Don't know how to handle response: \(response)")
                 }
             } else {
-                self.appendOutput("Error: \(error)")
+                NSLog("Error: \(error)")
             }
         }
         task.resume()
     }
     
-    func appendOutput(string: String) {
-        println(string)
-        NSOperationQueue.mainQueue().addOperationWithBlock {
-            var text: String = self.outputTextView.text
-            text = text.stringByAppendingString(string)
-            text = text.stringByAppendingString("\n\n")
-            self.outputTextView.text = text
-        }
-    }
+    
+    
 
 
     /*
