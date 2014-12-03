@@ -12,6 +12,7 @@
 		180815581A2E4B6900C75ABA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180815571A2E4B6900C75ABA /* Images.xcassets */; };
 		1808155B1A2E4B6900C75ABA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180815591A2E4B6900C75ABA /* LaunchScreen.xib */; };
 		180815671A2E4B6900C75ABA /* CoursesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180815661A2E4B6900C75ABA /* CoursesTests.swift */; };
+		18850F501A2F516600D146F1 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18850F4F1A2F516600D146F1 /* AuthVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		180815601A2E4B6900C75ABA /* CoursesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoursesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		180815651A2E4B6900C75ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		180815661A2E4B6900C75ABA /* CoursesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTests.swift; sourceTree = "<group>"; };
+		18850F4F1A2F516600D146F1 /* AuthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthVC.swift; path = Base.lproj/controllers/AuthVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				180815501A2E4B6900C75ABA /* AppDelegate.swift */,
 				180815541A2E4B6900C75ABA /* Main.storyboard */,
+				18850F511A2F516F00D146F1 /* Controllers */,
 				180815571A2E4B6900C75ABA /* Images.xcassets */,
 				180815591A2E4B6900C75ABA /* LaunchScreen.xib */,
 				1808154E1A2E4B6900C75ABA /* Supporting Files */,
@@ -107,6 +110,14 @@
 				180815651A2E4B6900C75ABA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18850F511A2F516F00D146F1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18850F4F1A2F516600D146F1 /* AuthVC.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18850F501A2F516600D146F1 /* AuthVC.swift in Sources */,
 				180815511A2E4B6900C75ABA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +415,7 @@
 				1808156C1A2E4B6900C75ABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1808156D1A2E4B6900C75ABA /* Build configuration list for PBXNativeTarget "CoursesTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +424,7 @@
 				1808156F1A2E4B6900C75ABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

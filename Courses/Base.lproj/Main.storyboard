@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--AuthVC-->
         <scene sceneID="umC-i8-aLf">
             <objects>
-                <viewController id="nPZ-lx-dne" sceneMemberID="viewController">
+                <viewController id="nPZ-lx-dne" customClass="AuthVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7l3-Id-0dM"/>
                         <viewControllerLayoutGuide type="bottom" id="QVL-Ol-CiJ"/>
@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="email" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fgx-Z8-JSj">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="jcoyne@mzinga.com" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fgx-Z8-JSj">
                                 <rect key="frame" x="252" y="252" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -27,7 +27,7 @@
                                     <rect key="frame" x="159" y="230" width="84" height="30"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PrT-EB-tnF">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="barbershop" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PrT-EB-tnF">
                                 <rect key="frame" x="252" y="285" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -44,6 +44,9 @@
                                 <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="259" y="258" width="84" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="touchLogin:" destination="nPZ-lx-dne" eventType="touchUpInside" id="ItU-Nz-u6j"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="mzingaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="NLI-pt-Sim">
                                 <rect key="frame" x="272" y="159" width="56" height="56"/>
@@ -54,8 +57,15 @@
                                     <rect key="frame" x="173" y="135" width="56" height="55"/>
                                 </variation>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y2w-fK-PcR">
+                                <rect key="frame" x="131" y="464" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.83529411764705885" green="0.97254901960784312" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.74901960784313726" green="0.92156862745098034" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Hca-qE-sKA" firstAttribute="top" secondItem="PrT-EB-tnF" secondAttribute="bottom" constant="43" id="1qK-sz-BOi">
                                 <variation key="heightClass=compact-widthClass=compact" constant="30"/>
@@ -102,6 +112,11 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="eMn-eg-kv2"/>
+                    <connections>
+                        <outlet property="email" destination="fgx-Z8-JSj" id="qw6-Bn-3xy"/>
+                        <outlet property="outputTextView" destination="Y2w-fK-PcR" id="rSr-sP-Smn"/>
+                        <outlet property="password" destination="PrT-EB-tnF" id="bjj-Qw-8y9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UuA-nx-DqI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
