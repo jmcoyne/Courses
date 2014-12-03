@@ -71,6 +71,13 @@ import UIKit
                     NSLog("Response from \(req.URL): \(body)")
                     self.authCallResults = NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments, error: &error) as? NSDictionary
                     NSLog("Auth Call results = %@", self.authCallResults!);
+                    let successMessage = (self.authCallResults?.valueForKeyPath(AUTH_RESULTS_SUCCESS)) as? Int
+                    NSLog("Auth Call success = %d", successMessage!)
+                    if successMessage == 1 {
+                        NSLog("We got in!")
+                        self.userDidAuthenticate   = true
+                    }
+                    
                    // NSLog("Response:%@ %@\n", response, error);
                                    } else {
                     NSLog("Don't know how to handle response: \(response)")
