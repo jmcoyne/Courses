@@ -23,6 +23,7 @@ import UIKit
     }
     var authCallResults:NSDictionary?
     
+    
     lazy var defaultConfigObject: NSURLSessionConfiguration = {
         NSURLSessionConfiguration.defaultSessionConfiguration()
         }()
@@ -76,10 +77,17 @@ import UIKit
                     if successMessage == 1 {
                         NSLog("We got in!")
                         self.userDidAuthenticate   = true
+                         let userEmail = (self.authCallResults?.valueForKeyPath(AUTH_RESULTS_EMAIL)) as? String
+                        NSLog("My email is %@", userEmail!)
+                        let userAuthToken = (self.authCallResults?.valueForKeyPath(AUTH_RESULTS_AUTH_TOKEN)) as? String
+                          NSLog("My authToken is %@", userAuthToken!)
+                    }
+                    else {
+                         self.userDidAuthenticate   = false;
                     }
                     
                    // NSLog("Response:%@ %@\n", response, error);
-                                   } else {
+                } else {
                     NSLog("Don't know how to handle response: \(response)")
                 }
             } else {

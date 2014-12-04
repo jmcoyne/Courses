@@ -12,8 +12,8 @@
 		180815581A2E4B6900C75ABA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180815571A2E4B6900C75ABA /* Images.xcassets */; };
 		1808155B1A2E4B6900C75ABA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180815591A2E4B6900C75ABA /* LaunchScreen.xib */; };
 		180815671A2E4B6900C75ABA /* CoursesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180815661A2E4B6900C75ABA /* CoursesTests.swift */; };
-		1817B60C1A2FA99A005109FB /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1817B60B1A2FA99A005109FB /* File.swift */; };
 		18850F501A2F516600D146F1 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18850F4F1A2F516600D146F1 /* AuthVC.swift */; };
+		18CF98491A30A9C800915CBF /* APIFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF98481A30A9C800915CBF /* APIFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,8 @@
 		180815601A2E4B6900C75ABA /* CoursesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoursesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		180815651A2E4B6900C75ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		180815661A2E4B6900C75ABA /* CoursesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTests.swift; sourceTree = "<group>"; };
-		1817B60B1A2FA99A005109FB /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		18850F4F1A2F516600D146F1 /* AuthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthVC.swift; path = Base.lproj/controllers/AuthVC.swift; sourceTree = "<group>"; };
+		18CF98481A30A9C800915CBF /* APIFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIFetcher.swift; path = Courses/Base.lproj/APIFetcher/APIFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +79,9 @@
 		1808154D1A2E4B6900C75ABA /* Courses */ = {
 			isa = PBXGroup;
 			children = (
+				18CF984A1A30A9CF00915CBF /* APIFetcher */,
 				180815501A2E4B6900C75ABA /* AppDelegate.swift */,
 				180815541A2E4B6900C75ABA /* Main.storyboard */,
-				1817B60B1A2FA99A005109FB /* File.swift */,
 				18850F511A2F516F00D146F1 /* Controllers */,
 				180815571A2E4B6900C75ABA /* Images.xcassets */,
 				180815591A2E4B6900C75ABA /* LaunchScreen.xib */,
@@ -121,6 +121,15 @@
 				18850F4F1A2F516600D146F1 /* AuthVC.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		18CF984A1A30A9CF00915CBF /* APIFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				18CF98481A30A9C800915CBF /* APIFetcher.swift */,
+			);
+			name = APIFetcher;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,8 +233,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				18850F501A2F516600D146F1 /* AuthVC.swift in Sources */,
-				1817B60C1A2FA99A005109FB /* File.swift in Sources */,
 				180815511A2E4B6900C75ABA /* AppDelegate.swift in Sources */,
+				18CF98491A30A9C800915CBF /* APIFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
