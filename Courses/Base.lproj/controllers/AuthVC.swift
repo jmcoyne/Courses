@@ -22,6 +22,11 @@ import UIKit
         // Dispose of any resources that can be recreated.
     }
     var authCallResults:NSDictionary?
+    var defaults: NSUserDefaults  = NSUserDefaults.standardUserDefaults()
+
+    
+    
+
     
     
     lazy var defaultConfigObject: NSURLSessionConfiguration = {
@@ -81,6 +86,10 @@ import UIKit
                         NSLog("My email is %@", userEmail!)
                         let userAuthToken = (self.authCallResults?.valueForKeyPath(AUTH_RESULTS_AUTH_TOKEN)) as? String
                           NSLog("My authToken is %@", userAuthToken!)
+                                               self.defaults.setObject(userEmail, forKey: "email")
+                         self.defaults.setObject(userAuthToken, forKey: "authToken")
+                        
+                         self.defaults.synchronize()
                     }
                     else {
                          self.userDidAuthenticate   = false;
@@ -110,5 +119,7 @@ import UIKit
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
 
 }

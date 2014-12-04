@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "439400814.751936"
+            timestampString = "439417347.009758"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "httpPostWithCustomDelegate()"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "439400814.751936"
+            timestampString = "439417347.009758"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "AuthVC"
             landmarkType = "3">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "439400814.751936"
+            timestampString = "439417347.009758"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "httpPostWithCustomDelegate()"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "439400814.751936"
+            timestampString = "439417347.009758"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "httpPostWithCustomDelegate()"
             landmarkType = "5">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "439401627.062374"
+            timestampString = "439417347.009758"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "httpPostWithCustomDelegate()"
             landmarkType = "5">
          </BreakpointContent>
@@ -86,17 +86,119 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "439402142.04759"
+            timestampString = "439417347.009758"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "httpPostWithCustomDelegate()"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
+            timestampString = "439417347.009758"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "AuthVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Courses.AuthVC.defaultConfigObject.getter : ObjectiveC.NSURLSessionConfiguration"
+                  moduleName = "Courses"
+                  urlString = "file:///Users/joancoyne/developer/Courses/Courses/Base.lproj/controllers/AuthVC.swift"
+                  timestampString = "439417234.07746"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Courses.AuthVC.defaultConfigObject.setter : ObjectiveC.NSURLSessionConfiguration"
+                  moduleName = "Courses"
+                  urlString = "file:///Users/joancoyne/developer/Courses/Courses/Base.lproj/controllers/AuthVC.swift"
+                  timestampString = "439417234.078137"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Courses.AuthVC.init (Courses.AuthVC.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; Courses.AuthVC"
+                  moduleName = "Courses"
+                  urlString = "file:///Users/joancoyne/developer/Courses/Courses/Base.lproj/controllers/AuthVC.swift"
+                  timestampString = "439417234.078422"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "284">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Courses.AuthVC.init (Courses.AuthVC.Type)() -&gt; Courses.AuthVC"
+                  moduleName = "Courses"
+                  urlString = "file:///Users/joancoyne/developer/Courses/Courses/Base.lproj/controllers/AuthVC.swift"
+                  timestampString = "439417234.078682"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "203">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Courses.AuthVC.init (Courses.AuthVC.Type)(coder : ObjectiveC.NSCoder) -&gt; Courses.AuthVC"
+                  moduleName = "Courses"
+                  urlString = "file:///Users/joancoyne/developer/Courses/Courses/Base.lproj/controllers/AuthVC.swift"
+                  timestampString = "439417234.078922"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "211">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Courses.AuthVC.(defaultConfigObject.getter : ObjectiveC.NSURLSessionConfiguration).(closure #1)"
+                  moduleName = "Courses"
+                  urlString = "file:///Users/joancoyne/developer/Courses/Courses/Base.lproj/controllers/AuthVC.swift"
+                  timestampString = "439417234.079169"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
