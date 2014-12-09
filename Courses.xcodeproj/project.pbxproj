@@ -13,6 +13,8 @@
 		1808155B1A2E4B6900C75ABA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180815591A2E4B6900C75ABA /* LaunchScreen.xib */; };
 		180815671A2E4B6900C75ABA /* CoursesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180815661A2E4B6900C75ABA /* CoursesTests.swift */; };
 		182AD52D1A378C71006E96B6 /* OrganizationsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182AD52C1A378C71006E96B6 /* OrganizationsTVC.swift */; };
+		182AD52F1A37979A006E96B6 /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182AD52E1A37979A006E96B6 /* CourseTableViewCell.swift */; };
+		184D6BEB1A379CDB00C93648 /* OneCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184D6BEA1A379CDB00C93648 /* OneCourse.swift */; };
 		18850F501A2F516600D146F1 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18850F4F1A2F516600D146F1 /* AuthVC.swift */; };
 		18CF98491A30A9C800915CBF /* APIFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF98481A30A9C800915CBF /* APIFetcher.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +40,8 @@
 		180815651A2E4B6900C75ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		180815661A2E4B6900C75ABA /* CoursesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTests.swift; sourceTree = "<group>"; };
 		182AD52C1A378C71006E96B6 /* OrganizationsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrganizationsTVC.swift; path = Base.lproj/controllers/OrganizationsTVC.swift; sourceTree = "<group>"; };
+		182AD52E1A37979A006E96B6 /* CourseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CourseTableViewCell.swift; path = Base.lproj/controllers/CourseTableViewCell.swift; sourceTree = "<group>"; };
+		184D6BEA1A379CDB00C93648 /* OneCourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OneCourse.swift; path = Base.lproj/Data/OneCourse.swift; sourceTree = "<group>"; };
 		18850F4F1A2F516600D146F1 /* AuthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthVC.swift; path = Base.lproj/controllers/AuthVC.swift; sourceTree = "<group>"; };
 		18CF98481A30A9C800915CBF /* APIFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIFetcher.swift; path = Courses/Base.lproj/APIFetcher/APIFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +125,7 @@
 		184CB6501A30EF62002F7783 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				184D6BEA1A379CDB00C93648 /* OneCourse.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 			children = (
 				18850F4F1A2F516600D146F1 /* AuthVC.swift */,
 				182AD52C1A378C71006E96B6 /* OrganizationsTVC.swift */,
+				182AD52E1A37979A006E96B6 /* CourseTableViewCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -246,7 +252,9 @@
 				18850F501A2F516600D146F1 /* AuthVC.swift in Sources */,
 				182AD52D1A378C71006E96B6 /* OrganizationsTVC.swift in Sources */,
 				180815511A2E4B6900C75ABA /* AppDelegate.swift in Sources */,
+				184D6BEB1A379CDB00C93648 /* OneCourse.swift in Sources */,
 				18CF98491A30A9C800915CBF /* APIFetcher.swift in Sources */,
+				182AD52F1A37979A006E96B6 /* CourseTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

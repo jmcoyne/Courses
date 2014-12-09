@@ -21,7 +21,7 @@ class OrganizationsTVC: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        var defaults: NSUserDefaults  = NSUserDefaults.standardUserDefaults()
+      /*  var defaults: NSUserDefaults  = NSUserDefaults.standardUserDefaults()
         if let emailIsNotNil = defaults.objectForKey(AUTH_RESULTS_EMAIL) as? String {
             let emailText = defaults.objectForKey("email") as String
             NSLog("My email is %@", emailText)
@@ -29,8 +29,8 @@ class OrganizationsTVC: UITableViewController {
         if let passwordIsNotNil = defaults.objectForKey(AUTH_RESULTS_AUTH_TOKEN) as? String {
             let authToken = defaults.objectForKey(AUTH_RESULTS_AUTH_TOKEN) as String
             NSLog("My authToken, again, is %@", authToken)
-        }
-        //Lets fake some data
+        } */
+        //Let's fake some data
         self.organizations = ["Mzinga", "Barbershop Labs"]
         self.tableView.reloadData()
 
@@ -47,7 +47,7 @@ class OrganizationsTVC: UITableViewController {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
         return 1
-    }  
+    }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
