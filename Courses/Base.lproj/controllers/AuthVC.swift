@@ -90,6 +90,8 @@ import UIKit
                          self.defaults.setObject(userAuthToken, forKey: "authToken")
                         
                          self.defaults.synchronize()
+                        //TODO Get user info, specifically, check for organizations
+                        self.performSegueWithIdentifier("Organizations", sender: self)
                     }
                     else {
                          self.userDidAuthenticate   = false;
@@ -103,6 +105,7 @@ import UIKit
                 NSLog("Error: \(error)")
             }
         }
+        
         task.resume()
     }
     
@@ -120,6 +123,17 @@ import UIKit
     }
     */
     
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if segue.identifier == "Organizations" {
+            
+            NSLog("Seguing to Organization")
+             let opvc = segue.destinationViewController as OrganizationsTVC;
+            opvc.title = "Organizations"
+            
+            
+            
+        }
+    }
+
 
 }
