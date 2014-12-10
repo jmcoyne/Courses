@@ -12,9 +12,30 @@
 		180815581A2E4B6900C75ABA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180815571A2E4B6900C75ABA /* Images.xcassets */; };
 		1808155B1A2E4B6900C75ABA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180815591A2E4B6900C75ABA /* LaunchScreen.xib */; };
 		180815671A2E4B6900C75ABA /* CoursesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180815661A2E4B6900C75ABA /* CoursesTests.swift */; };
+		180B05DD1A38C78A008AAD15 /* CourseMasterTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B05DC1A38C78A008AAD15 /* CourseMasterTVC.swift */; };
+		180B05DF1A38C7ED008AAD15 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B05DE1A38C7ED008AAD15 /* DetailViewController.swift */; };
+		180B05E21A38E1EF008AAD15 /* IMG_0302.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 180B05E01A38E1EF008AAD15 /* IMG_0302.jpg */; };
+		180B05E31A38E1EF008AAD15 /* IMG_0140.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 180B05E11A38E1EF008AAD15 /* IMG_0140.jpg */; };
+		180B05E91A38E200008AAD15 /* mzingabeeCloseup.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 180B05E41A38E200008AAD15 /* mzingabeeCloseup.jpg */; };
+		180B05EA1A38E200008AAD15 /* IMG_0329.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 180B05E51A38E200008AAD15 /* IMG_0329.jpg */; };
+		180B05EB1A38E200008AAD15 /* IMG_0187.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 180B05E61A38E200008AAD15 /* IMG_0187.jpg */; };
+		180B05EC1A38E200008AAD15 /* IMG_0201.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 180B05E71A38E200008AAD15 /* IMG_0201.jpg */; };
+		180B05ED1A38E200008AAD15 /* IMG_0407.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 180B05E81A38E200008AAD15 /* IMG_0407.jpg */; };
+		180B05F61A38E215008AAD15 /* IMG_0572.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 180B05EE1A38E215008AAD15 /* IMG_0572.jpg */; };
+		180B05F71A38E215008AAD15 /* IMG_0066.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 180B05EF1A38E215008AAD15 /* IMG_0066.jpg */; };
+		180B05F81A38E215008AAD15 /* IMG_0561.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 180B05F01A38E215008AAD15 /* IMG_0561.jpg */; };
+		180B05F91A38E215008AAD15 /* IMG_0571.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 180B05F11A38E215008AAD15 /* IMG_0571.jpg */; };
+		180B05FA1A38E215008AAD15 /* IMG_0567.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 180B05F21A38E215008AAD15 /* IMG_0567.jpg */; };
+		180B05FB1A38E215008AAD15 /* IMG_0223.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 180B05F31A38E215008AAD15 /* IMG_0223.jpg */; };
+		180B05FC1A38E215008AAD15 /* IMG_0204.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 180B05F41A38E215008AAD15 /* IMG_0204.jpg */; };
+		180B05FD1A38E215008AAD15 /* IMG_0521.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 180B05F51A38E215008AAD15 /* IMG_0521.jpg */; };
+		180B05FF1A38EA52008AAD15 /* mzingabee110.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 180B05FE1A38EA52008AAD15 /* mzingabee110.jpg */; };
+		180B06011A38EBD4008AAD15 /* mzingabee55.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 180B06001A38EBD4008AAD15 /* mzingabee55.jpeg */; };
 		182AD52D1A378C71006E96B6 /* OrganizationsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182AD52C1A378C71006E96B6 /* OrganizationsTVC.swift */; };
 		182AD52F1A37979A006E96B6 /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182AD52E1A37979A006E96B6 /* CourseTableViewCell.swift */; };
 		184D6BEB1A379CDB00C93648 /* OneCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184D6BEA1A379CDB00C93648 /* OneCourse.swift */; };
+		186C69DC1A38A74600078E68 /* TraitOverrideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186C69DB1A38A74600078E68 /* TraitOverrideViewController.swift */; };
+		186C69DE1A38A80100078E68 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186C69DD1A38A80100078E68 /* SplitViewController.swift */; };
 		18850F501A2F516600D146F1 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18850F4F1A2F516600D146F1 /* AuthVC.swift */; };
 		18CF98491A30A9C800915CBF /* APIFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF98481A30A9C800915CBF /* APIFetcher.swift */; };
 /* End PBXBuildFile section */
@@ -39,9 +60,30 @@
 		180815601A2E4B6900C75ABA /* CoursesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoursesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		180815651A2E4B6900C75ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		180815661A2E4B6900C75ABA /* CoursesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTests.swift; sourceTree = "<group>"; };
+		180B05DC1A38C78A008AAD15 /* CourseMasterTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseMasterTVC.swift; sourceTree = "<group>"; };
+		180B05DE1A38C7ED008AAD15 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = Base.lproj/controllers/DetailViewController.swift; sourceTree = "<group>"; };
+		180B05E01A38E1EF008AAD15 /* IMG_0302.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0302.jpg; sourceTree = "<group>"; };
+		180B05E11A38E1EF008AAD15 /* IMG_0140.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0140.jpg; sourceTree = "<group>"; };
+		180B05E41A38E200008AAD15 /* mzingabeeCloseup.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mzingabeeCloseup.jpg; sourceTree = "<group>"; };
+		180B05E51A38E200008AAD15 /* IMG_0329.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0329.jpg; sourceTree = "<group>"; };
+		180B05E61A38E200008AAD15 /* IMG_0187.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0187.jpg; sourceTree = "<group>"; };
+		180B05E71A38E200008AAD15 /* IMG_0201.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0201.jpg; sourceTree = "<group>"; };
+		180B05E81A38E200008AAD15 /* IMG_0407.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0407.jpg; sourceTree = "<group>"; };
+		180B05EE1A38E215008AAD15 /* IMG_0572.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0572.jpg; sourceTree = "<group>"; };
+		180B05EF1A38E215008AAD15 /* IMG_0066.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0066.jpg; sourceTree = "<group>"; };
+		180B05F01A38E215008AAD15 /* IMG_0561.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0561.jpg; sourceTree = "<group>"; };
+		180B05F11A38E215008AAD15 /* IMG_0571.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0571.jpg; sourceTree = "<group>"; };
+		180B05F21A38E215008AAD15 /* IMG_0567.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0567.jpg; sourceTree = "<group>"; };
+		180B05F31A38E215008AAD15 /* IMG_0223.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0223.jpg; sourceTree = "<group>"; };
+		180B05F41A38E215008AAD15 /* IMG_0204.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0204.jpg; sourceTree = "<group>"; };
+		180B05F51A38E215008AAD15 /* IMG_0521.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0521.jpg; sourceTree = "<group>"; };
+		180B05FE1A38EA52008AAD15 /* mzingabee110.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mzingabee110.jpg; sourceTree = "<group>"; };
+		180B06001A38EBD4008AAD15 /* mzingabee55.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mzingabee55.jpeg; sourceTree = "<group>"; };
 		182AD52C1A378C71006E96B6 /* OrganizationsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrganizationsTVC.swift; path = Base.lproj/controllers/OrganizationsTVC.swift; sourceTree = "<group>"; };
 		182AD52E1A37979A006E96B6 /* CourseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CourseTableViewCell.swift; path = Base.lproj/controllers/CourseTableViewCell.swift; sourceTree = "<group>"; };
 		184D6BEA1A379CDB00C93648 /* OneCourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OneCourse.swift; path = Base.lproj/Data/OneCourse.swift; sourceTree = "<group>"; };
+		186C69DB1A38A74600078E68 /* TraitOverrideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraitOverrideViewController.swift; sourceTree = "<group>"; };
+		186C69DD1A38A80100078E68 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		18850F4F1A2F516600D146F1 /* AuthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthVC.swift; path = Base.lproj/controllers/AuthVC.swift; sourceTree = "<group>"; };
 		18CF98481A30A9C800915CBF /* APIFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIFetcher.swift; path = Courses/Base.lproj/APIFetcher/APIFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +142,23 @@
 		1808154E1A2E4B6900C75ABA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				180B05EE1A38E215008AAD15 /* IMG_0572.jpg */,
+				180B06001A38EBD4008AAD15 /* mzingabee55.jpeg */,
+				180B05FE1A38EA52008AAD15 /* mzingabee110.jpg */,
+				180B05EF1A38E215008AAD15 /* IMG_0066.jpg */,
+				180B05F01A38E215008AAD15 /* IMG_0561.jpg */,
+				180B05F11A38E215008AAD15 /* IMG_0571.jpg */,
+				180B05F21A38E215008AAD15 /* IMG_0567.jpg */,
+				180B05F31A38E215008AAD15 /* IMG_0223.jpg */,
+				180B05F41A38E215008AAD15 /* IMG_0204.jpg */,
+				180B05F51A38E215008AAD15 /* IMG_0521.jpg */,
+				180B05E01A38E1EF008AAD15 /* IMG_0302.jpg */,
+				180B05E41A38E200008AAD15 /* mzingabeeCloseup.jpg */,
+				180B05E51A38E200008AAD15 /* IMG_0329.jpg */,
+				180B05E61A38E200008AAD15 /* IMG_0187.jpg */,
+				180B05E71A38E200008AAD15 /* IMG_0201.jpg */,
+				180B05E81A38E200008AAD15 /* IMG_0407.jpg */,
+				180B05E11A38E1EF008AAD15 /* IMG_0140.jpg */,
 				1808154F1A2E4B6900C75ABA /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -133,9 +192,13 @@
 		18850F511A2F516F00D146F1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				186C69DD1A38A80100078E68 /* SplitViewController.swift */,
+				186C69DB1A38A74600078E68 /* TraitOverrideViewController.swift */,
 				18850F4F1A2F516600D146F1 /* AuthVC.swift */,
 				182AD52C1A378C71006E96B6 /* OrganizationsTVC.swift */,
 				182AD52E1A37979A006E96B6 /* CourseTableViewCell.swift */,
+				180B05DC1A38C78A008AAD15 /* CourseMasterTVC.swift */,
+				180B05DE1A38C7ED008AAD15 /* DetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -229,9 +292,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180B05F91A38E215008AAD15 /* IMG_0571.jpg in Resources */,
+				180B05FA1A38E215008AAD15 /* IMG_0567.jpg in Resources */,
+				180B05F61A38E215008AAD15 /* IMG_0572.jpg in Resources */,
+				180B05E21A38E1EF008AAD15 /* IMG_0302.jpg in Resources */,
+				180B05FF1A38EA52008AAD15 /* mzingabee110.jpg in Resources */,
+				180B05F81A38E215008AAD15 /* IMG_0561.jpg in Resources */,
+				180B05E31A38E1EF008AAD15 /* IMG_0140.jpg in Resources */,
+				180B05EA1A38E200008AAD15 /* IMG_0329.jpg in Resources */,
+				180B05E91A38E200008AAD15 /* mzingabeeCloseup.jpg in Resources */,
+				180B05EC1A38E200008AAD15 /* IMG_0201.jpg in Resources */,
+				180B05FC1A38E215008AAD15 /* IMG_0204.jpg in Resources */,
 				180815561A2E4B6900C75ABA /* Main.storyboard in Resources */,
+				180B05F71A38E215008AAD15 /* IMG_0066.jpg in Resources */,
+				180B05ED1A38E200008AAD15 /* IMG_0407.jpg in Resources */,
+				180B05FD1A38E215008AAD15 /* IMG_0521.jpg in Resources */,
 				1808155B1A2E4B6900C75ABA /* LaunchScreen.xib in Resources */,
+				180B06011A38EBD4008AAD15 /* mzingabee55.jpeg in Resources */,
 				180815581A2E4B6900C75ABA /* Images.xcassets in Resources */,
+				180B05FB1A38E215008AAD15 /* IMG_0223.jpg in Resources */,
+				180B05EB1A38E200008AAD15 /* IMG_0187.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,9 +332,13 @@
 				18850F501A2F516600D146F1 /* AuthVC.swift in Sources */,
 				182AD52D1A378C71006E96B6 /* OrganizationsTVC.swift in Sources */,
 				180815511A2E4B6900C75ABA /* AppDelegate.swift in Sources */,
+				186C69DC1A38A74600078E68 /* TraitOverrideViewController.swift in Sources */,
 				184D6BEB1A379CDB00C93648 /* OneCourse.swift in Sources */,
 				18CF98491A30A9C800915CBF /* APIFetcher.swift in Sources */,
+				180B05DD1A38C78A008AAD15 /* CourseMasterTVC.swift in Sources */,
+				180B05DF1A38C7ED008AAD15 /* DetailViewController.swift in Sources */,
 				182AD52F1A37979A006E96B6 /* CourseTableViewCell.swift in Sources */,
+				186C69DE1A38A80100078E68 /* SplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

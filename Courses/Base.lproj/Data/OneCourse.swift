@@ -9,16 +9,29 @@
 import Foundation
 import UIKit
 
-@objc class OneCourse {
+@objc class Course {
     private(set) var courseName: String
+    private(set) var courseImageURL: String
     private(set) var courseDescription: String
-    // SO right now, the name of the image is the name of the course just to make it easier
+    private(set) var courseCreatedAt: String
+    private(set) var courseUpdatedAt: String
+    private(set) var courseCommentsCount: String
+
+    private(set) var courseSectionId: String
+    
+    // SO right now, the imageURL is just the name of the image just to make it easier
     var courseImage: UIImage {
-        return UIImage(named: courseName)!
+        return UIImage(named: courseImageURL)!
     }
     
-    init(courseName: String, courseDescription: String) {
-        self.courseName = courseName
-        self.courseDescription = courseDescription
+    init(name: String, description: String, imageURL: String, createdAt: String,updatedAt: String,commentsCount: String,sectionId: String) {
+        self.courseName = name
+        self.courseDescription = description
+        self.courseCreatedAt = createdAt
+        self.courseUpdatedAt = updatedAt
+        self.courseCommentsCount = commentsCount
+        self.courseSectionId = sectionId
+        self.courseImageURL = imageURL
+
     }
 }

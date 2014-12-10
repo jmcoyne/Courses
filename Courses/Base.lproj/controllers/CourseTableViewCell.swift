@@ -16,10 +16,11 @@ class CourseTableViewCell: UITableViewCell {
     
     @IBOutlet weak var courseTitleLabel: UILabel!
   
-    @IBOutlet weak var courseDescriptionLabel: UILabel!
+   
+    @IBOutlet weak var courseDescriptionTextField: UITextField!
     
     // MARK: - Properties
-    var oneCourse: OneCourse? {
+    var oneCourse: Course? {
         didSet {
             configureCell()
         }
@@ -27,19 +28,9 @@ class CourseTableViewCell: UITableViewCell {
     
     // MARK: - Utility methods
     private func configureCell() {
-        courseImageView.image = oneCourse?.courseImage
+        //courseImageView.image = oneCourse?.courseImage
         courseTitleLabel.text = oneCourse?.courseName
-         courseDescriptionLabel.text = oneCourse?.courseDescription
+         courseDescriptionTextField.text = oneCourse?.courseDescription
     }
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    
 }

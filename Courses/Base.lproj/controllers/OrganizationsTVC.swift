@@ -61,9 +61,11 @@ class OrganizationsTVC: UITableViewController {
 
         // Configure the cell...
         cell.textLabel?.text =  organizations[indexPath.row]
+        // cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
 
         return cell
     }
+    
     
  
     /*
@@ -101,14 +103,24 @@ class OrganizationsTVC: UITableViewController {
     }
     */
 
-    /*
+   
     // MARK: - Navigation
-
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("Classes", sender: tableView)
+    }
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+       
+            if segue.identifier == "Classes" {
+                NSLog("Seguing to Classes")
+                let recentClassesVC = segue.destinationViewController as UIViewController
+                recentClassesVC.title = "Classes"
+                
+            }
+        
     }
-    */
+    
 
 }
