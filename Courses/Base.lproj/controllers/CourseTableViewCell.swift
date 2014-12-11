@@ -17,7 +17,7 @@ class CourseTableViewCell: UITableViewCell {
     @IBOutlet weak var courseTitleLabel: UILabel!
   
    
-    @IBOutlet weak var courseDescriptionTextField: UITextField!
+    @IBOutlet weak var courseDescriptionTextView: UITextView!
     
     // MARK: - Properties
     var oneCourse: Course? {
@@ -30,7 +30,7 @@ class CourseTableViewCell: UITableViewCell {
     private func configureCell() {
         //courseImageView.image = oneCourse?.courseImage
         courseTitleLabel.text = oneCourse?.courseName
-         courseDescriptionTextField.text = oneCourse?.courseDescription
+         courseDescriptionTextView.text = oneCourse?.courseDescription
     }
     
 }

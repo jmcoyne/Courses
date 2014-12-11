@@ -63,7 +63,7 @@ class CourseMasterTVC: UITableViewController {
         course = courses[indexPath.row]
         // Configure the cell...
         cell.courseTitleLabel.text = course.courseName;
-        cell.courseDescriptionTextField.text    = course.courseDescription
+        cell.courseDescriptionTextView.text    = course.courseDescription
         //cell.courseImageView.image = course.courseImage
                //cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         return cell
