@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C78c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2pp-wW-ls3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C81f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2pp-wW-ls3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -191,10 +191,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="gE4-iq-zf0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Di-q9-cM6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3262" y="707"/>
+            <point key="canvasLocation" x="4464" y="815"/>
         </scene>
         <!--Course MasterTVC-->
         <scene sceneID="1tb-K6-1z7">
@@ -232,7 +233,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" bounces="NO" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNp-FZ-BAL">
-                                            <rect key="frame" x="50" y="26" width="320" height="120"/>
+                                            <rect key="frame" x="82" y="26" width="2000" height="120"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="8"/>
@@ -240,7 +241,6 @@
                                         </textView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="nfQ-BU-MCu" firstAttribute="top" secondItem="WNj-z6-0YW" secondAttribute="top" id="1Ps-fg-92G"/>
                                         <constraint firstAttribute="trailing" secondItem="JNp-FZ-BAL" secondAttribute="trailing" constant="165" id="A2x-F2-o8X"/>
                                         <constraint firstItem="S8V-V5-e8P" firstAttribute="top" secondItem="nfQ-BU-MCu" secondAttribute="top" id="All-v8-slO"/>
                                         <constraint firstItem="nfQ-BU-MCu" firstAttribute="leading" secondItem="WNj-z6-0YW" secondAttribute="leading" constant="8" id="IBj-HR-X7n"/>
@@ -261,6 +261,7 @@
                                     <outlet property="courseDescriptionTextView" destination="JNp-FZ-BAL" id="Ner-Qv-Mos"/>
                                     <outlet property="courseImageView" destination="nfQ-BU-MCu" id="jhE-qr-0X4"/>
                                     <outlet property="courseTitleLabel" destination="S8V-V5-e8P" id="FUv-lw-k0L"/>
+                                    <segue destination="eaB-VC-OLK" kind="showDetail" identifier="CourseDetail" id="ywf-g5-bRs"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -273,7 +274,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fqT-A8-wcB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3665" y="-55"/>
+            <point key="canvasLocation" x="4079" y="69"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kTL-yK-6SE">
@@ -297,7 +298,7 @@
                 <splitViewController id="Ey0-SR-grA" customClass="SplitViewController" customModule="Courses" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
                         <segue destination="GM7-AR-iDg" kind="relationship" relationship="masterViewController" id="Q06-AH-va7"/>
-                        <segue destination="zcv-7r-eif" kind="relationship" relationship="detailViewController" id="McK-UU-gg7"/>
+                        <segue destination="eaB-VC-OLK" kind="relationship" relationship="detailViewController" id="McK-UU-gg7"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ySf-GF-MBa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -322,9 +323,30 @@
             </objects>
             <point key="canvasLocation" x="264" y="321"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CRU-m7-l5n">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eaB-VC-OLK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TX6-ep-vg2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zcv-7r-eif" kind="relationship" relationship="rootViewController" id="mEo-kZ-s1p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xqe-tN-8pD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3652" y="815"/>
+        </scene>
     </scenes>
     <resources>
         <image name="mzingaLogo" width="56" height="55"/>
         <image name="mzingabee55.jpeg" width="55" height="55"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ywf-g5-bRs"/>
+    </inferredMetricsTieBreakers>
 </document>
