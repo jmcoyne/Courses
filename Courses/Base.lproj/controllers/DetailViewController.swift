@@ -9,13 +9,38 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+ 
+    
+    @IBOutlet weak var courseImageView: UIImageView!
+    
+    @IBOutlet weak var sectionLabel: UILabel!
+    
+    @IBOutlet weak var courseNameLabel: UILabel!
+    
+    var oneCourse: Course? {
+        didSet {
+            self.configureView()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.configureView()
 
         // Do any additional setup after loading the view.
     }
+    
+    
 
+    private func configureView() {
+        if let course = oneCourse? {
+        //courseImageView.image = oneCourse?.courseImage
+        courseNameLabel?.text = course.courseName
+        sectionLabel?.text = course.courseDescription
+           //courseNameLabel?.text = "Hey there!"
+          //  sectionLabel?.text = "Ho There!"
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

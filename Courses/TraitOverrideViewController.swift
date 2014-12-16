@@ -9,18 +9,15 @@
 import UIKit
 
 class TraitOverrideViewController: UIViewController {
+    
     override func viewWillTransitionToSize(size: CGSize,
-    withTransitionCoordinator coordinator:
-    UIViewControllerTransitionCoordinator) {
-    var traitOverride: UITraitCollection? = nil
-    if size.width > 414 {
-    traitOverride = UITraitCollection(horizontalSizeClass:
-    .Regular)
-    }
-    setOverrideTraitCollection(traitOverride,
-    forChildViewController: childViewControllers[0] as
-    UIViewController)
-    super.viewWillTransitionToSize(size,
-    withTransitionCoordinator: coordinator)
+          withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+            var traitOverride: UITraitCollection? = nil
+            if size.width > 414 {
+                traitOverride = UITraitCollection(horizontalSizeClass:.Regular)
+            }
+            setOverrideTraitCollection(traitOverride,
+                 forChildViewController: childViewControllers[0] as UIViewController)
+            super.viewWillTransitionToSize(size,withTransitionCoordinator: coordinator)
     }
 }

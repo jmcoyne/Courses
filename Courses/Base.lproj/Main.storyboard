@@ -189,13 +189,35 @@
                     <view key="view" contentMode="scaleToFill" id="HOI-2p-6Ut">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mzingabee110.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yi6-5v-Mkx">
+                                <rect key="frame" x="245" y="52" width="110" height="110"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Section Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPJ-sO-o5t">
+                                <rect key="frame" x="245" y="170" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Course Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dq-FQ-9Sf">
+                                <rect key="frame" x="245" y="214" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="gE4-iq-zf0"/>
+                    <connections>
+                        <outlet property="courseImageView" destination="yi6-5v-Mkx" id="dQ0-Mg-Zmr"/>
+                        <outlet property="courseNameLabel" destination="6dq-FQ-9Sf" id="mGe-qG-K2S"/>
+                        <outlet property="sectionLabel" destination="MPJ-sO-o5t" id="vP0-Yn-0r6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Di-q9-cM6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4464" y="815"/>
+            <point key="canvasLocation" x="4410" y="812"/>
         </scene>
         <!--Course MasterTVC-->
         <scene sceneID="1tb-K6-1z7">
@@ -344,6 +366,7 @@
     </scenes>
     <resources>
         <image name="mzingaLogo" width="56" height="55"/>
+        <image name="mzingabee110.jpg" width="110" height="110"/>
         <image name="mzingabee55.jpeg" width="55" height="55"/>
     </resources>
     <inferredMetricsTieBreakers>
