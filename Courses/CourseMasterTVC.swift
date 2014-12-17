@@ -123,6 +123,7 @@ class CourseMasterTVC: UITableViewController {
                let course   = self.courses[self.tableView!.indexPathForSelectedRow()!.row]
                //detailVC.courseNameLabel?.text = course.courseName
                 detailVC.oneCourse = course
+                detailVC.title = "Mzinga"
                 //NSLog("Course name %@", course.courseName)
 
 

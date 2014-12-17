@@ -36,6 +36,10 @@
 		184D6BEB1A379CDB00C93648 /* OneCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184D6BEA1A379CDB00C93648 /* OneCourse.swift */; };
 		186C69DC1A38A74600078E68 /* TraitOverrideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186C69DB1A38A74600078E68 /* TraitOverrideViewController.swift */; };
 		186C69DE1A38A80100078E68 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186C69DD1A38A80100078E68 /* SplitViewController.swift */; };
+		1872B5711A420C4D00CAA989 /* Membership.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872B5701A420C4D00CAA989 /* Membership.swift */; };
+		1872B5731A420C7000CAA989 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872B5721A420C7000CAA989 /* User.swift */; };
+		1872B5751A420CCF00CAA989 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872B5741A420CCF00CAA989 /* Organization.swift */; };
+		1872B5771A4214DE00CAA989 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872B5761A4214DE00CAA989 /* SwiftyJSON.swift */; };
 		18850F501A2F516600D146F1 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18850F4F1A2F516600D146F1 /* AuthVC.swift */; };
 		18CF98491A30A9C800915CBF /* APIFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF98481A30A9C800915CBF /* APIFetcher.swift */; };
 /* End PBXBuildFile section */
@@ -84,6 +88,10 @@
 		184D6BEA1A379CDB00C93648 /* OneCourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OneCourse.swift; path = Base.lproj/Data/OneCourse.swift; sourceTree = "<group>"; };
 		186C69DB1A38A74600078E68 /* TraitOverrideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraitOverrideViewController.swift; sourceTree = "<group>"; };
 		186C69DD1A38A80100078E68 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		1872B5701A420C4D00CAA989 /* Membership.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Membership.swift; path = Base.lproj/Data/Membership.swift; sourceTree = "<group>"; };
+		1872B5721A420C7000CAA989 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Base.lproj/Data/User.swift; sourceTree = "<group>"; };
+		1872B5741A420CCF00CAA989 /* Organization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Organization.swift; path = Base.lproj/Data/Organization.swift; sourceTree = "<group>"; };
+		1872B5761A4214DE00CAA989 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		18850F4F1A2F516600D146F1 /* AuthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthVC.swift; path = Base.lproj/controllers/AuthVC.swift; sourceTree = "<group>"; };
 		18CF98481A30A9C800915CBF /* APIFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIFetcher.swift; path = Courses/Base.lproj/APIFetcher/APIFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -185,6 +193,10 @@
 			isa = PBXGroup;
 			children = (
 				184D6BEA1A379CDB00C93648 /* OneCourse.swift */,
+				1872B5721A420C7000CAA989 /* User.swift */,
+				1872B5761A4214DE00CAA989 /* SwiftyJSON.swift */,
+				1872B5701A420C4D00CAA989 /* Membership.swift */,
+				1872B5741A420CCF00CAA989 /* Organization.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -331,14 +343,18 @@
 			files = (
 				18850F501A2F516600D146F1 /* AuthVC.swift in Sources */,
 				182AD52D1A378C71006E96B6 /* OrganizationsTVC.swift in Sources */,
+				1872B5751A420CCF00CAA989 /* Organization.swift in Sources */,
 				180815511A2E4B6900C75ABA /* AppDelegate.swift in Sources */,
 				186C69DC1A38A74600078E68 /* TraitOverrideViewController.swift in Sources */,
+				1872B5771A4214DE00CAA989 /* SwiftyJSON.swift in Sources */,
 				184D6BEB1A379CDB00C93648 /* OneCourse.swift in Sources */,
 				18CF98491A30A9C800915CBF /* APIFetcher.swift in Sources */,
 				180B05DD1A38C78A008AAD15 /* CourseMasterTVC.swift in Sources */,
 				180B05DF1A38C7ED008AAD15 /* DetailViewController.swift in Sources */,
+				1872B5731A420C7000CAA989 /* User.swift in Sources */,
 				182AD52F1A37979A006E96B6 /* CourseTableViewCell.swift in Sources */,
 				186C69DE1A38A80100078E68 /* SplitViewController.swift in Sources */,
+				1872B5711A420C4D00CAA989 /* Membership.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

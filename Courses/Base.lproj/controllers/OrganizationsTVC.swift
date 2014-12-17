@@ -116,7 +116,7 @@ class OrganizationsTVC: UITableViewController {
             if segue.identifier == "Classes" {
                 NSLog("Seguing to Classes")
                 let recentClassesVC = segue.destinationViewController as UIViewController
-                recentClassesVC.title = "Classes"
+                recentClassesVC.title = self.organizations[self.tableView!.indexPathForSelectedRow()!.row]
                 
             }
         
