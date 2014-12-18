@@ -10,7 +10,7 @@ import UIKit
 
 class OrganizationsTVC: UITableViewController {
     // TODO: - Create an organization model
-    var organizations = [String]()
+   var organizations = [Organization]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,7 @@ class OrganizationsTVC: UITableViewController {
             NSLog("My authToken, again, is %@", authToken)
         } */
         //Let's fake some data
-        self.organizations = ["Mzinga", "Barbershop Labs"]
+        
         self.tableView.reloadData()
 
     }
@@ -52,7 +52,9 @@ class OrganizationsTVC: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return self.organizations.count
+       
+        NSLog("Count: \(self.organizations.count)")
+         return self.organizations.count
     }
 
     
@@ -60,7 +62,7 @@ class OrganizationsTVC: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("Organization Cell", forIndexPath: indexPath) as UITableViewCell
 
         // Configure the cell...
-        cell.textLabel?.text =  organizations[indexPath.row]
+        cell.textLabel?.text =  self.organizations[indexPath.row].name
         // cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
 
         return cell
@@ -116,7 +118,7 @@ class OrganizationsTVC: UITableViewController {
             if segue.identifier == "Classes" {
                 NSLog("Seguing to Classes")
                 let recentClassesVC = segue.destinationViewController as UIViewController
-                recentClassesVC.title = self.organizations[self.tableView!.indexPathForSelectedRow()!.row]
+                recentClassesVC.title = self.organizations[self.tableView!.indexPathForSelectedRow()!.row].name
                 
             }
         

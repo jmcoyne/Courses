@@ -41,6 +41,8 @@
 		1872B5751A420CCF00CAA989 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872B5741A420CCF00CAA989 /* Organization.swift */; };
 		1872B5771A4214DE00CAA989 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872B5761A4214DE00CAA989 /* SwiftyJSON.swift */; };
 		18850F501A2F516600D146F1 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18850F4F1A2F516600D146F1 /* AuthVC.swift */; };
+		189EE4B81A431C3000A41937 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EE4B71A431C3000A41937 /* DataManager.swift */; };
+		189EE4BC1A432BB200A41937 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 189EE4BB1A432BB200A41937 /* user.json */; };
 		18CF98491A30A9C800915CBF /* APIFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF98481A30A9C800915CBF /* APIFetcher.swift */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +95,8 @@
 		1872B5741A420CCF00CAA989 /* Organization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Organization.swift; path = Base.lproj/Data/Organization.swift; sourceTree = "<group>"; };
 		1872B5761A4214DE00CAA989 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		18850F4F1A2F516600D146F1 /* AuthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthVC.swift; path = Base.lproj/controllers/AuthVC.swift; sourceTree = "<group>"; };
+		189EE4B71A431C3000A41937 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = Base.lproj/Data/DataManager.swift; sourceTree = "<group>"; };
+		189EE4BB1A432BB200A41937 /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
 		18CF98481A30A9C800915CBF /* APIFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIFetcher.swift; path = Courses/Base.lproj/APIFetcher/APIFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,11 +196,13 @@
 		184CB6501A30EF62002F7783 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				189EE4BB1A432BB200A41937 /* user.json */,
 				184D6BEA1A379CDB00C93648 /* OneCourse.swift */,
 				1872B5721A420C7000CAA989 /* User.swift */,
 				1872B5761A4214DE00CAA989 /* SwiftyJSON.swift */,
 				1872B5701A420C4D00CAA989 /* Membership.swift */,
 				1872B5741A420CCF00CAA989 /* Organization.swift */,
+				189EE4B71A431C3000A41937 /* DataManager.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -304,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189EE4BC1A432BB200A41937 /* user.json in Resources */,
 				180B05F91A38E215008AAD15 /* IMG_0571.jpg in Resources */,
 				180B05FA1A38E215008AAD15 /* IMG_0567.jpg in Resources */,
 				180B05F61A38E215008AAD15 /* IMG_0572.jpg in Resources */,
@@ -342,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18850F501A2F516600D146F1 /* AuthVC.swift in Sources */,
+				189EE4B81A431C3000A41937 /* DataManager.swift in Sources */,
 				182AD52D1A378C71006E96B6 /* OrganizationsTVC.swift in Sources */,
 				1872B5751A420CCF00CAA989 /* Organization.swift in Sources */,
 				180815511A2E4B6900C75ABA /* AppDelegate.swift in Sources */,

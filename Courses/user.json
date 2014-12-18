@@ -1,0 +1,63 @@
+
+
+{
+    "user": {
+        "id": 2,
+        "email": "jcoyne@mzina.com",
+        "sign_in_count": 14,
+        "image": {
+            "image": {
+                "url": null,
+                "xsmall": {
+                    "url": "http://placehold.it/30x30"
+                },
+                "small": {
+                    "url": "http://placehold.it/55x55"
+                },
+                "medium": {
+                    "url": "http://placehold.it/110x110"
+                },
+                "large": {
+                    "url": "http://placehold.it/500x500"
+                }
+            }
+        },
+        "first_name": "Joan",
+        "last_name": "Coyne",
+        "city": "Burington",
+        "state": "MA",
+        "created_at": "2014-12-10T02:51:22.083Z",
+        "updated_at": "2014-12-17T16:39:42.847Z",
+        "memberships": [
+            {
+                "status": "active",
+                "role": "admin",
+                "created_at": "2014-12-10T02:51:22.643Z",
+                "updated_at": "2014-12-10T02:51:22.643Z",
+                "organization": {
+                    "id": 1,
+                    "name": "barbershoplabs",
+                    "subdomain": "barbershoplabs",
+                    "status": "active",
+                    "created_at": "2014-12-10T02:51:22.590Z",
+                    "updated_at": "2014-12-10T02:51:22.590Z"
+                }
+
+            },
+            {
+                "status": "active",
+                 "role": "admin",
+                "created_at": "2014-12-10T02:51:22.643Z",
+                "updated_at": "2014-12-10T02:51:22.643Z",
+                "organization": {
+                    "id": 2,
+                    "name": "mzinga",
+                    "subdomain": "mzinga",
+                    "status": "active",
+                    "created_at": "2014-12-10T02:51:22.590Z",
+                        "updated_at": "2014-12-10T02:51:22.590Z"
+                }
+            }
+        ]
+    }
+}

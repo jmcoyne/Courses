@@ -10,6 +10,7 @@ import UIKit
 
 @objc(AuthVC) class AuthVC: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.userDidAuthenticate = false
@@ -23,6 +24,7 @@ import UIKit
     }
     var authCallResults:NSDictionary?
     var defaults: NSUserDefaults  = NSUserDefaults.standardUserDefaults()
+    var organizations = [Organization]()
 
     
     
@@ -42,6 +44,7 @@ import UIKit
     @IBOutlet weak var email: UITextField!
     @IBAction func touchLogin(sender: AnyObject) {
         self.httpPostWithCustomDelegate()
+        
     }
 
     func httpPostWithCustomDelegate() {
@@ -91,8 +94,8 @@ import UIKit
                         
                          self.defaults.synchronize()
                         //TODO Get user info, specifically, check for organizations
-                        self.performSegueWithIdentifier("Organizations", sender: self)
-                    }
+                         self.setUserProperties()
+                                             }
                     else {
                          self.userDidAuthenticate   = false;
                     }
@@ -109,7 +112,50 @@ import UIKit
         task.resume()
     }
     
-    
+    func setUserProperties() {
+        DataManager.getUserDataFromFileWithSuccess { (data) -> Void in
+            // Get #1 app name using SwiftyJSON
+            let json = JSON(data: data)
+            if let firstName = json["user"]["first_name"].stringValue {
+                println(" \(firstName)")
+            }
+            if let lastName = json["user"]["last_name"].stringValue {
+                println(" \(lastName)")
+            }
+            
+            //1
+            if let membershipArray = json["user"]["memberships"].arrayValue {
+                //2
+                
+                
+                //3
+                for membershipDict in membershipArray {
+                    var thisName: String? = membershipDict["organization"]["name"].stringValue
+                    var thisId: String? = membershipDict["organization"]["id"].stringValue
+                    var thisSubdomain = membershipDict["organization"]["subdomain"].stringValue
+                    let thisStatus = membershipDict["organization"]["status"].stringValue
+                    let thisCreatedAt = membershipDict["organization"]["created_at"].stringValue
+                    let thisUpdatedAt = membershipDict["organization"]["updated_at"].stringValue
+                    
+                    var org = Organization(id: thisId!, name: thisName!, subdomain: thisSubdomain!, status: thisStatus!, createdAt: thisCreatedAt!, updatedAt: thisUpdatedAt!)
+                    self.organizations.append(org)
+                    
+                }
+                
+                //4
+                for anOrg in self.organizations {
+                    println("Hey! \(anOrg.name)")
+                }
+                self.performSegueWithIdentifier("Organizations", sender: self)
+
+                
+            }
+            
+            
+            
+        }
+
+    }
     
 
 
@@ -126,10 +172,11 @@ import UIKit
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if segue.identifier == "Organizations" {
             
-            NSLog("Seguing to Organization")
+            
              let opvc = segue.destinationViewController as OrganizationsTVC;
             opvc.title = "Organizations"
-            
+            opvc.organizations = self.organizations
+            NSLog("Seguing to Organization")
             
             
         }
