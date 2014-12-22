@@ -126,11 +126,11 @@ import UIKit
             var state: String? = json["user"]["state"].stringValue
             var createdAt: String? = json["user"]["created_at"].stringValue
             var updatedAt: String? = json["user"]["updated_at"].stringValue
-            var imageURL: String? = json["user"]["image"]["url"].stringValue
-            var xsmallURL: String? = json["user"]["image"]["xsmall"].stringValue
-            var smallURL: String? = json["user"]["image"]["small"].stringValue
-            var mediumURL: String? = json["user"]["image"]["meduim"].stringValue
-            var largeURL: String? = json["user"]["image"]["large"].stringValue
+            var imageURL: String? = json["user"]["image"]["image"]["url"].stringValue
+            var xsmallURL: String? = json["user"]["image"]["image"]["xsmall"]["url"].stringValue
+            var smallURL: String? = json["user"]["image"]["image"]["small"]["url"].stringValue
+            var mediumURL: String? = json["user"]["image"]["image"]["meduim"]["url"].stringValue
+            var largeURL: String? = json["user"]["image"]["image"]["large"]["url"].stringValue
             
             //1
             if let membershipArray = json["user"]["memberships"].arrayValue {
