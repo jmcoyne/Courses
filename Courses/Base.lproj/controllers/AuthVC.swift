@@ -26,6 +26,7 @@ import UIKit
     var defaults: NSUserDefaults  = NSUserDefaults.standardUserDefaults()
     var organizations = [Organization]()
     var memberships = [Membership]()
+    var user:User?
 
     
     
@@ -118,7 +119,7 @@ import UIKit
             // Get #1 app name using SwiftyJSON
             let json = JSON(data: data)
             var id: String? = json["user"]["id"].stringValue
-            var email: String? = json["user"]["email"].stringValue
+            var userEmail: String? = json["user"]["email"].stringValue
             var signInCount: String? = json["user"]["sign_in_count"].stringValue
             var firstName: String? = json["user"]["first_name"].stringValue
             var lastName: String? = json["user"]["last_name"].stringValue
@@ -165,7 +166,7 @@ import UIKit
 
                 
             }
-            
+            self.user = User(id: id!, email: userEmail!, imageURL: imageURL, xsmallURL: xsmallURL, smallURL: smallURL, mediumURL: mediumURL, largeURL: largeURL, firstName: firstName, lastName: lastName, city: city, state: state, createdAt: createdAt!, updatedAt: updatedAt!, memberships: self.memberships)
             
             self.performSegueWithIdentifier("Organizations", sender: self)
             

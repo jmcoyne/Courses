@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "440977393.044596"
+            timestampString = "440977974.651407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
             landmarkName = "httpPostWithCustomDelegate()"
             landmarkType = "5">
          </BreakpointContent>
@@ -586,11 +586,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "440977393.044596"
+            timestampString = "440977974.651407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "174"
-            endingLineNumber = "174"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
             landmarkName = "setUserProperties()"
             landmarkType = "5">
          </BreakpointContent>
@@ -602,11 +602,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "440977393.044596"
+            timestampString = "440977974.651407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "219"
-            endingLineNumber = "219">
+            startingLineNumber = "220"
+            endingLineNumber = "220">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -632,23 +632,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "440977393.044596"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "httpPostWithCustomDelegate()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "440977393.044596"
+            timestampString = "440977974.651407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "101"
@@ -664,11 +648,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "440977393.044596"
+            timestampString = "440977974.651407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "httpPostWithCustomDelegate()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
+            timestampString = "440977974.651407"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
             landmarkName = "setUserProperties()"
             landmarkType = "5">
          </BreakpointContent>
@@ -680,11 +680,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "440977393.044596"
+            timestampString = "440977974.651407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "185"
-            endingLineNumber = "185"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
             landmarkName = "AuthVC"
             landmarkType = "3">
          </BreakpointContent>
@@ -696,11 +696,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "440977393.044596"
+            timestampString = "440977974.651407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "190"
-            endingLineNumber = "190"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
             landmarkName = "prepareForSegue(_:sender:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -712,11 +712,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "440977393.044596"
+            timestampString = "440977974.651407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
             landmarkName = "setUserProperties()"
             landmarkType = "5">
             <Locations>
@@ -758,11 +758,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "440977393.044596"
+            timestampString = "440977974.651407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
             landmarkName = "prepareForSegue(_:sender:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -774,11 +774,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "440977393.044596"
+            timestampString = "440977974.651407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
             landmarkName = "setUserProperties()"
             landmarkType = "5">
          </BreakpointContent>
@@ -790,11 +790,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "440977393.044596"
+            timestampString = "440977974.651407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "setUserProperties()"
             landmarkType = "5">
          </BreakpointContent>
@@ -806,11 +806,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "440977393.044596"
+            timestampString = "440977974.651407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
             landmarkName = "setUserProperties()"
             landmarkType = "5">
          </BreakpointContent>
@@ -822,11 +822,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "440977393.044596"
+            timestampString = "440977974.651407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "setUserProperties()"
             landmarkType = "5">
          </BreakpointContent>
@@ -838,23 +838,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "440977393.044596"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "193"
-            endingLineNumber = "193"
-            landmarkName = "prepareForSegue(_:sender:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "440977393.044596"
+            timestampString = "440977974.651407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "194"
@@ -870,7 +854,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "440977393.044596"
+            timestampString = "440977974.651407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "195"
@@ -886,7 +870,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "440977393.044596"
+            timestampString = "440977974.651407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "196"
@@ -902,11 +886,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "440977393.044596"
+            timestampString = "440977974.651407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
+            landmarkName = "prepareForSegue(_:sender:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
+            timestampString = "440977974.651407"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
             landmarkName = "setUserProperties()"
             landmarkType = "5">
             <Locations>
@@ -963,7 +963,7 @@
                   symbolName = "Courses.AuthVC.__deallocating_deinit"
                   moduleName = "Courses"
                   urlString = "file:///Users/joancoyne/developer/Courses/Courses/Base.lproj/controllers/AuthVC.swift"
-                  timestampString = "440977722.290377"
+                  timestampString = "440977975.485432"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "11"
@@ -977,7 +977,7 @@
                   symbolName = "@objc Courses.AuthVC.__ivar_destroyer"
                   moduleName = "Courses"
                   urlString = "file:///Users/joancoyne/developer/Courses/Courses/Base.lproj/controllers/AuthVC.swift"
-                  timestampString = "440977722.290552"
+                  timestampString = "440977975.486034"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "11"
@@ -994,11 +994,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "440977554.544207"
+            timestampString = "440977974.651407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "setUserProperties()"
             landmarkType = "5">
          </BreakpointContent>
@@ -1010,12 +1010,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
-            timestampString = "440977638.141707"
+            timestampString = "440977974.651407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "httpPostWithCustomDelegate()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Courses/Base.lproj/controllers/AuthVC.swift"
+            timestampString = "440977982.758886"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
+            landmarkName = "setUserProperties()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
