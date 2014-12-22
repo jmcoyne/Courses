@@ -130,14 +130,14 @@ import UIKit
                 
                 //3
                 for membershipDict in membershipArray {
-                    var thisName: String? = membershipDict["organization"]["name"].stringValue
-                    var thisId: String? = membershipDict["organization"]["id"].stringValue
-                    var thisSubdomain = membershipDict["organization"]["subdomain"].stringValue
-                    let thisStatus = membershipDict["organization"]["status"].stringValue
-                    let thisCreatedAt = membershipDict["organization"]["created_at"].stringValue
-                    let thisUpdatedAt = membershipDict["organization"]["updated_at"].stringValue
+                    var orgName: String? = membershipDict["organization"]["name"].stringValue
+                    var orgId: String? = membershipDict["organization"]["id"].stringValue
+                    var orgSubdomain = membershipDict["organization"]["subdomain"].stringValue
+                    let orgStatus = membershipDict["organization"]["status"].stringValue
+                    let orgCreatedAt = membershipDict["organization"]["created_at"].stringValue
+                    let orgUpdatedAt = membershipDict["organization"]["updated_at"].stringValue
                     
-                    var org = Organization(id: thisId!, name: thisName!, subdomain: thisSubdomain!, status: thisStatus!, createdAt: thisCreatedAt!, updatedAt: thisUpdatedAt!)
+                    var org = Organization(id: orgId!, name: orgName!, subdomain: orgSubdomain!, status: orgStatus!, createdAt: orgCreatedAt!, updatedAt: orgUpdatedAt!)
                     self.organizations.append(org)
                     
                 }
