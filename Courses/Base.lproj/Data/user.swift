@@ -11,40 +11,40 @@ import UIKit
 
 
 
-@objc class User {
-    private(set) var id: String
-    private(set) var email: String
-    private(set) var imageURL: String
-    private(set) var xsmallURL: String
-    private(set) var smallURL: String
-    private(set) var mediumURL: String
-    private(set) var largeURL: String
-    private(set) var firstName: String
-    private(set) var lastName: String
-    private(set) var city: String
-    private(set) var state: String
-    private(set) var createdAt: String
-    private(set) var updatedAt: String
-    private(set) var memberships: Membership
+class User {
+    let id: String
+    let email: String
+    let imageURL: String
+    let xsmallURL: String
+    let smallURL: String
+    let mediumURL: String
+    let largeURL: String
+    let firstName: String
+    let lastName: String
+    let city: String
+    let state: String
+    let createdAt: String
+    let updatedAt: String
+    let memberships: [Membership]
     
     // SO right now, the imageURL is just the name of the image just to make it easier
     var userImage: UIImage {
         return UIImage(named: imageURL)!
     }
     
-    init(id: String, email: String, imageURL: String,xsmallURL: String,smallURL: String,mediumURL: String,largeURL: String, firstName: String, lastName: String, city: String, state: String, createdAt: String,updatedAt: String,memberships:Membership) {
+    init(id: String, email: String, imageURL: String?,xsmallURL: String?,smallURL: String?,mediumURL: String?,largeURL: String?, firstName: String?, lastName: String?, city: String?, state: String?, createdAt: String,updatedAt: String,memberships:[Membership]) {
         
         self.id = id
         self.email = email
-        self.imageURL = imageURL
-        self.xsmallURL = xsmallURL
-        self.smallURL = smallURL
-        self.mediumURL = mediumURL
-        self.largeURL = largeURL
-        self.firstName = firstName
-        self.lastName  = lastName
-        self.city = city
-        self.state  = state
+        self.imageURL = imageURL ?? ""
+        self.xsmallURL = xsmallURL ?? ""
+        self.smallURL = smallURL ?? ""
+        self.mediumURL = mediumURL ?? ""
+        self.largeURL = largeURL ?? ""
+        self.firstName = firstName ?? ""
+        self.lastName  = lastName ?? ""
+        self.city = city ?? ""
+        self.state  = state ?? ""
         self.createdAt = createdAt
         self.updatedAt = updatedAt
         self.memberships = memberships

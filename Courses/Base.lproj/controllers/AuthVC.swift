@@ -25,6 +25,7 @@ import UIKit
     var authCallResults:NSDictionary?
     var defaults: NSUserDefaults  = NSUserDefaults.standardUserDefaults()
     var organizations = [Organization]()
+    var memberships = [Membership]()
 
     
     
@@ -116,12 +117,20 @@ import UIKit
         DataManager.getUserDataFromFileWithSuccess { (data) -> Void in
             // Get #1 app name using SwiftyJSON
             let json = JSON(data: data)
-            if let firstName = json["user"]["first_name"].stringValue {
-                println(" \(firstName)")
-            }
-            if let lastName = json["user"]["last_name"].stringValue {
-                println(" \(lastName)")
-            }
+            var id: String? = json["user"]["id"].stringValue
+            var email: String? = json["user"]["email"].stringValue
+            var signInCount: String? = json["user"]["sign_in_count"].stringValue
+            var firstName: String? = json["user"]["first_name"].stringValue
+            var lastName: String? = json["user"]["last_name"].stringValue
+            var city: String? = json["user"]["city"].stringValue
+            var state: String? = json["user"]["state"].stringValue
+            var createdAt: String? = json["user"]["created_at"].stringValue
+            var updatedAt: String? = json["user"]["updated_at"].stringValue
+            var imageURL: String? = json["user"]["image"]["url"].stringValue
+            var xsmallURL: String? = json["user"]["image"]["xsmall"].stringValue
+            var smallURL: String? = json["user"]["image"]["small"].stringValue
+            var mediumURL: String? = json["user"]["image"]["meduim"].stringValue
+            var largeURL: String? = json["user"]["image"]["large"].stringValue
             
             //1
             if let membershipArray = json["user"]["memberships"].arrayValue {
@@ -130,15 +139,20 @@ import UIKit
                 
                 //3
                 for membershipDict in membershipArray {
+                    var membershipStatus: String? = membershipDict["status"].stringValue
+                    var membershipRole: String? = membershipDict["role"].stringValue
+                    var membershipCreatedAt: String? = membershipDict["created_at"].stringValue
+                    var membershipUpdatedAt: String? = membershipDict["updated_at"].stringValue
                     var orgName: String? = membershipDict["organization"]["name"].stringValue
                     var orgId: String? = membershipDict["organization"]["id"].stringValue
-                    var orgSubdomain = membershipDict["organization"]["subdomain"].stringValue
-                    let orgStatus = membershipDict["organization"]["status"].stringValue
-                    let orgCreatedAt = membershipDict["organization"]["created_at"].stringValue
-                    let orgUpdatedAt = membershipDict["organization"]["updated_at"].stringValue
+                    var orgSubdomain: String? = membershipDict["organization"]["subdomain"].stringValue
+                    var orgStatus: String? = membershipDict["organization"]["status"].stringValue
+                    var orgCreatedAt: String? = membershipDict["organization"]["created_at"].stringValue
+                    var orgUpdatedAt: String? = membershipDict["organization"]["updated_at"].stringValue
                     
                     var org = Organization(id: orgId!, name: orgName!, subdomain: orgSubdomain!, status: orgStatus!, createdAt: orgCreatedAt!, updatedAt: orgUpdatedAt!)
                     self.organizations.append(org)
+                    let membership = Membership(status: membershipStatus, role: membershipRole, createdAt: membershipCreatedAt, updatedAt: membershipUpdatedAt, organization: org);
                     
                 }
                 
@@ -146,11 +160,14 @@ import UIKit
                 for anOrg in self.organizations {
                     println("Hey! \(anOrg.name)")
                 }
-                self.performSegueWithIdentifier("Organizations", sender: self)
+                
+                
 
                 
             }
             
+            
+            self.performSegueWithIdentifier("Organizations", sender: self)
             
             
         }
