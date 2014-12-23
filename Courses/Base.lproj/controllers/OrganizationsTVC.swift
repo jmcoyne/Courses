@@ -12,6 +12,7 @@ class OrganizationsTVC: UITableViewController {
     // TODO: - Create an organization model
    var organizations = [Organization]()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -108,6 +109,7 @@ class OrganizationsTVC: UITableViewController {
    
     // MARK: - Navigation
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
         self.performSegueWithIdentifier("Classes", sender: tableView)
     }
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -119,6 +121,8 @@ class OrganizationsTVC: UITableViewController {
                 NSLog("Seguing to Classes")
                 let recentClassesVC = segue.destinationViewController as UIViewController
                 recentClassesVC.title = self.organizations[self.tableView!.indexPathForSelectedRow()!.row].name
+               // recentClassesVC.organizationId = organizations[self.tableView!.indexPathForSelectedRow()!.row].id
+
                 
             }
         

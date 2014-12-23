@@ -130,7 +130,7 @@ import UIKit
             var imageURL: String? = json["user"]["image"]["image"]["url"].stringValue
             var xsmallURL: String? = json["user"]["image"]["image"]["xsmall"]["url"].stringValue
             var smallURL: String? = json["user"]["image"]["image"]["small"]["url"].stringValue
-            var mediumURL: String? = json["user"]["image"]["image"]["meduim"]["url"].stringValue
+            var mediumURL: String? = json["user"]["image"]["image"]["medium"]["url"].stringValue
             var largeURL: String? = json["user"]["image"]["image"]["large"]["url"].stringValue
             
             //1

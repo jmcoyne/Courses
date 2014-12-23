@@ -43,6 +43,8 @@
 		18850F501A2F516600D146F1 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18850F4F1A2F516600D146F1 /* AuthVC.swift */; };
 		189EE4B81A431C3000A41937 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EE4B71A431C3000A41937 /* DataManager.swift */; };
 		189EE4BC1A432BB200A41937 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 189EE4BB1A432BB200A41937 /* user.json */; };
+		18C7868A1A49F9EB00759DD2 /* courses.json in Resources */ = {isa = PBXBuildFile; fileRef = 18C786881A49F9EB00759DD2 /* courses.json */; };
+		18C7868B1A49F9EB00759DD2 /* CourseListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C786891A49F9EB00759DD2 /* CourseListing.swift */; };
 		18CF98491A30A9C800915CBF /* APIFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF98481A30A9C800915CBF /* APIFetcher.swift */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +99,8 @@
 		18850F4F1A2F516600D146F1 /* AuthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthVC.swift; path = Base.lproj/controllers/AuthVC.swift; sourceTree = "<group>"; };
 		189EE4B71A431C3000A41937 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = Base.lproj/Data/DataManager.swift; sourceTree = "<group>"; };
 		189EE4BB1A432BB200A41937 /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
+		18C786881A49F9EB00759DD2 /* courses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = courses.json; sourceTree = "<group>"; };
+		18C786891A49F9EB00759DD2 /* CourseListing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseListing.swift; sourceTree = "<group>"; };
 		18CF98481A30A9C800915CBF /* APIFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIFetcher.swift; path = Courses/Base.lproj/APIFetcher/APIFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -196,6 +200,8 @@
 		184CB6501A30EF62002F7783 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				18C786881A49F9EB00759DD2 /* courses.json */,
+				18C786891A49F9EB00759DD2 /* CourseListing.swift */,
 				189EE4BB1A432BB200A41937 /* user.json */,
 				184D6BEA1A379CDB00C93648 /* OneCourse.swift */,
 				1872B5721A420C7000CAA989 /* User.swift */,
@@ -328,6 +334,7 @@
 				180B05FD1A38E215008AAD15 /* IMG_0521.jpg in Resources */,
 				1808155B1A2E4B6900C75ABA /* LaunchScreen.xib in Resources */,
 				180B06011A38EBD4008AAD15 /* mzingabee55.jpeg in Resources */,
+				18C7868A1A49F9EB00759DD2 /* courses.json in Resources */,
 				180815581A2E4B6900C75ABA /* Images.xcassets in Resources */,
 				180B05FB1A38E215008AAD15 /* IMG_0223.jpg in Resources */,
 				180B05EB1A38E200008AAD15 /* IMG_0187.jpg in Resources */,
@@ -357,6 +364,7 @@
 				1872B5771A4214DE00CAA989 /* SwiftyJSON.swift in Sources */,
 				184D6BEB1A379CDB00C93648 /* OneCourse.swift in Sources */,
 				18CF98491A30A9C800915CBF /* APIFetcher.swift in Sources */,
+				18C7868B1A49F9EB00759DD2 /* CourseListing.swift in Sources */,
 				180B05DD1A38C78A008AAD15 /* CourseMasterTVC.swift in Sources */,
 				180B05DF1A38C7ED008AAD15 /* DetailViewController.swift in Sources */,
 				1872B5731A420C7000CAA989 /* User.swift in Sources */,
