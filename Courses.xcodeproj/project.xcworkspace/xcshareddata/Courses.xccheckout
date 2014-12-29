@@ -6,15 +6,19 @@
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>B3CE82EB-1BBF-40B6-B539-F0E39953CBCF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Courses</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>6C289470CD79920D76DCB11E2D74DBED9A99466D</key>
 		<string>https://github.com/jmcoyne/Courses.git</string>
 	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Courses.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>6C289470CD79920D76DCB11E2D74DBED9A99466D</key>
-		<string>Courses/</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/jmcoyne/Courses.git</string>
