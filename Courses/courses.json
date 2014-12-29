@@ -1,0 +1,72 @@
+{
+    "Design": [
+               {
+               "id": 1,
+               "organization_id": 1,
+               "name": "Test course Design",
+               "description": "Lorem ipsum",
+               "image": {
+               "url": null,
+               "xsmall": {
+               "url": "http://placehold.it/30x30"
+               },
+               "small": {
+               "url": "http://placehold.it/55x55"
+               },
+               "medium": {
+               "url": "http://placehold.it/110x110"
+               },
+               "large": {
+               "url": "http://placehold.it/500x500"
+               }
+               },
+               "created_at": "2014-12-10T02:52:06.938Z",
+               "updated_at": "2014-12-10T02:52:22.360Z",
+               "comments_count": 2,
+               "user_id": 1,
+               "cached_votes_total": 2,
+               "cached_votes_score": 2,
+               "cached_votes_up": 2,
+               "cached_votes_down": 0,
+               "cached_weighted_score": 2,
+               "cached_weighted_total": 2,
+               "cached_weighted_average": 0,
+               "section_id": 1
+               }
+               ],
+    "Human Resources": [
+                        {
+                        "id": 2,
+                        "organization_id": 1,
+                        "name": "Test course HR",
+                        "description": "Lorem ipsum",
+                        "image": {
+                        "url": null,
+                        "xsmall": {
+                        "url": "http://placehold.it/30x30"
+                        },
+                        "small": {
+                        "url": "http://placehold.it/55x55"
+                        },
+                        "medium": {
+                        "url": "http://placehold.it/110x110"
+                        },
+                        "large": {
+                        "url": "http://placehold.it/500x500"
+                        }
+                        },
+                        "created_at": "2014-12-10T02:52:17.835Z",
+                        "updated_at": "2014-12-10T02:52:22.381Z",
+                        "comments_count": 2,
+                        "user_id": 2,
+                        "cached_votes_total": 2,
+                        "cached_votes_score": 2,
+                        "cached_votes_up": 2,
+                        "cached_votes_down": 0,
+                        "cached_weighted_score": 2,
+                        "cached_weighted_total": 2,
+                        "cached_weighted_average": 0,
+                        "section_id": 2
+                        }
+                        ]
+}
