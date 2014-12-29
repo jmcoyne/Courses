@@ -24,7 +24,7 @@ class CourseListing {
     private(set) var courseCreatedAt: String
     private(set) var courseUpdatedAt: String
     private(set) var CommentsCount: String
-    
+     
     
     
     // SO right now, the imageURL is just the name of the image just to make it easier
