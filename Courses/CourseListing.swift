@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+
 class CourseListing {
     private(set) var courseId: String
     private(set) var courseName: String
