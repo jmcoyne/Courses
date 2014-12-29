@@ -109,7 +109,7 @@ class OrganizationsTVC: UITableViewController {
    
     // MARK: - Navigation
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+         
         self.performSegueWithIdentifier("Classes", sender: tableView)
     }
     // In a storyboard-based application, you will often want to do a little preparation before navigation
