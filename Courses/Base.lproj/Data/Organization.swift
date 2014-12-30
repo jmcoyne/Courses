@@ -16,7 +16,7 @@ import Foundation
     private(set) var createdAt: String
     private(set) var updatedAt: String
     
-    
+     
     
     
     init(id: String, name: String, subdomain: String, status: String, createdAt: String,updatedAt: String) {
