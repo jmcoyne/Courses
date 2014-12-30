@@ -20,7 +20,7 @@ class CourseTableViewCell: UITableViewCell {
     @IBOutlet weak var courseDescriptionTextView: UITextView!
     
     // MARK: - Properties
-    var oneCourse: Course? {
+    var oneCourse: OneCourse? {
         didSet {
             configureCell()
         }
@@ -31,6 +31,8 @@ class CourseTableViewCell: UITableViewCell {
         //courseImageView.image = oneCourse?.courseImage
         courseTitleLabel.text = oneCourse?.courseName
          courseDescriptionTextView.text = oneCourse?.courseDescription
+      //  let courseId  = oneCourse?.courseId
+       // NSlog("here is my courseId \(courseId)")
     }
     
 }

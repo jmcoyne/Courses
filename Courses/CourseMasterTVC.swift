@@ -56,17 +56,12 @@ class CourseMasterTVC: UITableViewController {
                         var oneCourse = CourseListing(courseId: id!, courseName: name!, sectionId: sectionId, sectionName: thisSection, courseDescription: description, courseImageURL: imageURL, courseXsmallURL: xsmallURL, courseSmallURL: smallURL, courseMediumURL: mediumURL, courseLargeURL: largeURL, courseCreatedAt: createdAt!, courseUpdatedAt: updatedAt!, commentsCount: commentCount)
                         self.recentCourses.append(oneCourse);
                     }
-                    for aClass in self.recentCourses {
-                        println("Hey! \(aClass.courseName)")
-                    }
+                   
                 }
                 
             }
             
-            // if let descriptionName = json["course"]["description"].stringValue {
-            //     println("SwiftyJSON: \(descriptionName)")
-            //  }
-            
+                       
         }
 
         
@@ -168,10 +163,11 @@ class CourseMasterTVC: UITableViewController {
                // let detailVC  = detailNav.topViewController as DetailViewController
                 let detailVC  = (segue.destinationViewController as UINavigationController).topViewController as DetailViewController
                let course   = self.recentCourses[self.tableView!.indexPathForSelectedRow()!.row]
-               //detailVC.courseNameLabel?.text = course.courseName
+               detailVC.courseNameLabel?.text = course.courseName
               // detailVC.oneCourse = course
                 detailVC.title = "Mzinga"
-                //NSLog("Course name %@", course.courseName)
+                NSLog("Course name %@", course.courseName)
+                 NSLog("Course name %@", course.courseId)
 
 
                 //}

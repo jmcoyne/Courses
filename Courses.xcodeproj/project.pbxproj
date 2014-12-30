@@ -46,7 +46,7 @@
 		18C7868A1A49F9EB00759DD2 /* courses.json in Resources */ = {isa = PBXBuildFile; fileRef = 18C786881A49F9EB00759DD2 /* courses.json */; };
 		18C7868B1A49F9EB00759DD2 /* CourseListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C786891A49F9EB00759DD2 /* CourseListing.swift */; };
 		18CF98491A30A9C800915CBF /* APIFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF98481A30A9C800915CBF /* APIFetcher.swift */; };
-		4EE579BE1A52F1FC00717357 /* OneCourse.json in Resources */ = {isa = PBXBuildFile; fileRef = 4EE579BD1A52F1FC00717357 /* OneCourse.json */; };
+		4E0AE5AB1A53512A00B06B30 /* oneCourse.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E0AE5AA1A53512A00B06B30 /* oneCourse.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,7 +103,7 @@
 		18C786881A49F9EB00759DD2 /* courses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = courses.json; sourceTree = "<group>"; };
 		18C786891A49F9EB00759DD2 /* CourseListing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseListing.swift; sourceTree = "<group>"; };
 		18CF98481A30A9C800915CBF /* APIFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIFetcher.swift; path = Courses/Base.lproj/APIFetcher/APIFetcher.swift; sourceTree = "<group>"; };
-		4EE579BD1A52F1FC00717357 /* OneCourse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = OneCourse.json; path = ../../OneCourse.json; sourceTree = "<group>"; };
+		4E0AE5AA1A53512A00B06B30 /* oneCourse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = oneCourse.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,8 +202,8 @@
 		184CB6501A30EF62002F7783 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				4EE579BD1A52F1FC00717357 /* OneCourse.json */,
 				18C786881A49F9EB00759DD2 /* courses.json */,
+				4E0AE5AA1A53512A00B06B30 /* oneCourse.json */,
 				18C786891A49F9EB00759DD2 /* CourseListing.swift */,
 				189EE4BB1A432BB200A41937 /* user.json */,
 				184D6BEA1A379CDB00C93648 /* OneCourse.swift */,
@@ -325,7 +325,6 @@
 				180B05F61A38E215008AAD15 /* IMG_0572.jpg in Resources */,
 				180B05E21A38E1EF008AAD15 /* IMG_0302.jpg in Resources */,
 				180B05FF1A38EA52008AAD15 /* mzingabee110.jpg in Resources */,
-				4EE579BE1A52F1FC00717357 /* OneCourse.json in Resources */,
 				180B05F81A38E215008AAD15 /* IMG_0561.jpg in Resources */,
 				180B05E31A38E1EF008AAD15 /* IMG_0140.jpg in Resources */,
 				180B05EA1A38E200008AAD15 /* IMG_0329.jpg in Resources */,
@@ -336,6 +335,7 @@
 				180B05F71A38E215008AAD15 /* IMG_0066.jpg in Resources */,
 				180B05ED1A38E200008AAD15 /* IMG_0407.jpg in Resources */,
 				180B05FD1A38E215008AAD15 /* IMG_0521.jpg in Resources */,
+				4E0AE5AB1A53512A00B06B30 /* oneCourse.json in Resources */,
 				1808155B1A2E4B6900C75ABA /* LaunchScreen.xib in Resources */,
 				180B06011A38EBD4008AAD15 /* mzingabee55.jpeg in Resources */,
 				18C7868A1A49F9EB00759DD2 /* courses.json in Resources */,

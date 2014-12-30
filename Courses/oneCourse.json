@@ -1,0 +1,232 @@
+{
+    "course": {
+        "id": 1,
+        "name": "Test course",
+        "description": "Lorem ipsum",
+        "comments_count": 2,
+        "cached_votes_up": 2,
+        "cached_votes_down": 0,
+        "image": {
+            "image": {
+                "url": null,
+                "xsmall": {
+                    "url": "http://placehold.it/30x30"
+                },
+                "small": {
+                    "url": "http://placehold.it/55x55"
+                },
+                "medium": {
+                    "url": "http://placehold.it/110x110"
+                },
+                "large": {
+                    "url": "http://placehold.it/500x500"
+                }
+            }
+        },
+        "tags": [],
+        "created_at": "2014-12-10T02:52:06.938Z",
+        "updated_at": "2014-12-10T02:52:22.360Z",
+        "section": {
+            "id": 1,
+            "name": "Design",
+            "image": {
+                "image": {
+                    "url": "https://mzingalmsdev.s3.amazonaws.com/uploads/section/image/1/crayons.jpg",
+                    "xsmall": {
+                        "url": "https://mzingalmsdev.s3.amazonaws.com/uploads/section/image/1/xsmall_crayons.jpg"
+                    },
+                    "small": {
+                        "url": "https://mzingalmsdev.s3.amazonaws.com/uploads/section/image/1/small_crayons.jpg"
+                    },
+                    "medium": {
+                        "url": "https://mzingalmsdev.s3.amazonaws.com/uploads/section/image/1/medium_crayons.jpg"
+                    },
+                    "large": {
+                        "url": "https://mzingalmsdev.s3.amazonaws.com/uploads/section/image/1/large_crayons.jpg"
+                    }
+                }
+            },
+            "created_at": "2014-12-10T02:51:22.704Z",
+            "updated_at": "2014-12-10T02:52:22.362Z"
+        },
+        "lessons": [
+                    {
+                    "id": 1,
+                    "title": "Test Lesson",
+                    "media_url": "/Users/adam/src/mzinga/lms/lib/assets/sample.mp4",
+                    "panda_video_id": "84c3b20076831c05da25e5ad83c18a14",
+                    "encoding_status": "Complete",
+                    "course_id": 1,
+                    "description": "Lorem ipsum",
+                    "created_at": "2014-12-10T02:52:06.978Z",
+                    "updated_at": "2014-12-10T02:52:10.182Z",
+                    "user_id": null,
+                    "image": {
+                    "url": "https://mzingalmsdev.s3.amazonaws.com/uploads/lesson/image/1/e8f6c082acf3943642e7e021f2403300_1.jpg",
+                    "xsmall": {
+                    "url": "https://mzingalmsdev.s3.amazonaws.com/uploads/lesson/image/1/xsmall_e8f6c082acf3943642e7e021f2403300_1.jpg"
+                    },
+                    "small": {
+                    "url": "https://mzingalmsdev.s3.amazonaws.com/uploads/lesson/image/1/small_e8f6c082acf3943642e7e021f2403300_1.jpg"
+                    },
+                    "medium": {
+                    "url": "https://mzingalmsdev.s3.amazonaws.com/uploads/lesson/image/1/medium_e8f6c082acf3943642e7e021f2403300_1.jpg"
+                    },
+                    "large": {
+                    "url": "https://mzingalmsdev.s3.amazonaws.com/uploads/lesson/image/1/large_e8f6c082acf3943642e7e021f2403300_1.jpg"
+                    }
+                    }
+                    }
+                    ],
+        "comments": [
+                     {
+                     "id": 1,
+                     "user_id": 1,
+                     "body": "Lorem ipsum",
+                     "created_at": "2014-12-10T02:52:22.348Z",
+                     "updated_at": "2014-12-10T02:52:22.348Z"
+                     },
+                     {
+                     "id": 2,
+                     "user_id": 2,
+                     "body": "Lorem ipsum",
+                     "created_at": "2014-12-10T02:52:22.358Z",
+                     "updated_at": "2014-12-10T02:52:22.358Z"
+                     }
+                     ],
+        "user": {
+            "id": 1,
+            "email": "adam@barbershoplabs.com",
+            "sign_in_count": 11,
+            "image": {
+                "image": {
+                    "url": null,
+                    "xsmall": {
+                        "url": "http://placehold.it/30x30"
+                    },
+                    "small": {
+                        "url": "http://placehold.it/55x55"
+                    },
+                    "medium": {
+                        "url": "http://placehold.it/110x110"
+                    },
+                    "large": {
+                        "url": "http://placehold.it/500x500"
+                    }
+                }
+            },
+            "first_name": null,
+            "last_name": null,
+            "city": null,
+            "state": null,
+            "created_at": "2014-12-10T02:51:22.083Z",
+            "updated_at": "2014-12-12T16:37:54.720Z",
+            "memberships": [
+                            {
+                            "status": "active",
+                            "role": "admin",
+                            "created_at": "2014-12-10T02:51:22.643Z",
+                            "updated_at": "2014-12-10T02:51:22.643Z",
+                            "organization": {
+                            "id": 1,
+                            "name": "barbershoplabs",
+                            "subdomain": "barbershoplabs",
+                            "status": "active",
+                            "created_at": "2014-12-10T02:51:22.590Z",
+                            "updated_at": "2014-12-10T02:51:22.590Z"
+                            }
+                            }
+                            ]
+        },
+        "users": [
+                  {
+                  "id": 1,
+                  "email": "adam@barbershoplabs.com",
+                  "sign_in_count": 11,
+                  "image": {
+                  "image": {
+                  "url": null,
+                  "xsmall": {
+                  "url": "http://placehold.it/30x30"
+                  },
+                  "small": {
+                  "url": "http://placehold.it/55x55"
+                  },
+                  "medium": {
+                  "url": "http://placehold.it/110x110"
+                  },
+                  "large": {
+                  "url": "http://placehold.it/500x500"
+                  }
+                  }
+                  },
+                  "first_name": null,
+                  "last_name": null,
+                  "city": null,
+                  "state": null,
+                  "created_at": "2014-12-10T02:51:22.083Z",
+                  "updated_at": "2014-12-12T16:37:54.720Z",
+                  "memberships": [
+                                  {
+                                  "status": "active",
+                                  "role": "admin",
+                                  "created_at": "2014-12-10T02:51:22.643Z",
+                                  "updated_at": "2014-12-10T02:51:22.643Z",
+                                  "organization": {
+                                  "id": 1,
+                                  "name": "barbershoplabs",
+                                  "subdomain": "barbershoplabs",
+                                  "status": "active",
+                                  "created_at": "2014-12-10T02:51:22.590Z",
+                                  "updated_at": "2014-12-10T02:51:22.590Z"
+                                  }
+                                  }
+                                  ]
+                  },
+                  {
+                  "id": 2,
+                  "email": "nate@barbershoplabs.com",
+                  "sign_in_count": 0,
+                  "image": {
+                  "image": {
+                  "url": null,
+                  "xsmall": {
+                  "url": "http://placehold.it/30x30"
+                  },
+                  "small": {
+                  "url": "http://placehold.it/55x55"
+                  },
+                  "medium": {
+                  "url": "http://placehold.it/110x110"
+                  },
+                  "large": {
+                  "url": "http://placehold.it/500x500"
+                  }
+                  }
+                  },
+                  "first_name": null,
+                  "last_name": null,
+                  "city": null,
+                  "state": null,
+                  "created_at": "2014-12-10T02:51:22.187Z",
+                  "updated_at": "2014-12-10T02:51:22.187Z",
+                  "memberships": [
+                                  {
+                                  "status": "active",
+                                  "role": "admin",
+                                  "created_at": "2014-12-10T02:51:22.648Z",
+                                  "updated_at": "2014-12-10T02:51:22.648Z",
+                                  "organization": {
+                                  "id": 1,
+                                  "name": "barbershoplabs",
+                                  "subdomain": "barbershoplabs",
+                                  "status": "active",
+                                  "created_at": "2014-12-10T02:51:22.590Z",
+                                  "updated_at": "2014-12-10T02:51:22.590Z"
+                                  }
+                                  }
+                                  ]
+                  }
+                  ]
+    }
+}
