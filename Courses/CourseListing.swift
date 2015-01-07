@@ -23,9 +23,7 @@ class CourseListing {
     private(set) var courseLargeURL: String
     private(set) var courseCreatedAt: String
     private(set) var courseUpdatedAt: String
-    private(set) var CommentsCount: String
-     
-    
+    private(set) var commentsCount: String
     
     // SO right now, the imageURL is just the name of the image just to make it easier
     var courseImage: UIImage {
@@ -47,8 +45,8 @@ class CourseListing {
         self.courseLargeURL = courseLargeURL ?? ""
         self.courseCreatedAt = courseCreatedAt
         self.courseUpdatedAt = courseUpdatedAt
-        self.CommentsCount = commentsCount  ?? ""
-        
+        self.commentsCount = commentsCount  ?? ""
+               
         
     }
 }

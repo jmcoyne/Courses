@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
  
     
@@ -18,16 +18,15 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var courseNameLabel: UILabel!
     
+ 
+    @IBOutlet weak var lessonTableView: UITableView!
+    
     var oneCourse: OneCourse?
-        /*{
-        didSet {
-            self.configureView()
-        }
-    }*/
+    var lessons = [Lesson]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+         self.lessonTableView.registerNib(UINib(nibName: "UICustomTableViewCell", bundle: nil), forCellReuseIdentifier: "Lesson Cell")
         
         DataManager.getOneCourseDataFromFileWithSuccess { (data) -> Void in
             
@@ -49,9 +48,29 @@ class DetailViewController: UIViewController {
             var sectionId: String?  = json["course"]["section"]["id"].stringValue
             var sectionName: String?  = json["course"]["section"]["name"].stringValue
             
+            if let lessonArray = json["course"]["lessons"].arrayValue {
+                 for lessonDict in lessonArray {
+                    var lessonId: String? = lessonDict["id"].stringValue
+                    var lessonTitle: String? = lessonDict["title"].stringValue
+                    var lessonMediaUrl: String? = lessonDict["media_url"].stringValue
+                    var lessonVideoId: String? = lessonDict["panda_video_id"].stringValue
+                    var lessonCourseId: String? = lessonDict["course_id"].stringValue
+                    var lessonDescription: String? = lessonDict["description"].stringValue
+                    var lessonCreatedAt: String? = lessonDict["created_at"].stringValue
+                    var lessonUpdatedAt: String? = lessonDict["updated_at"].stringValue
+                    var lessonImageURL: String?  = lessonDict["image"]["url"].stringValue
+                    var lessonXsmallURL: String? = lessonDict["image"]["xsmall"]["url"].stringValue
+                    var lessonSmallURL: String?  = lessonDict["image"]["small"]["url"].stringValue
+                    var lessonMediumURL: String? = lessonDict["image"]["medium"]["url"].stringValue
+                    var lessonLargeURL: String?  = lessonDict["image"]["large"]["url"].stringValue
 
+
+                    var lesson = Lesson(id: lessonId!, title: lessonTitle!, mediaURL: lessonMediaUrl!, videoId: lessonVideoId!, courseId: lessonCourseId!, description: lessonDescription, lessonImageURL: lessonImageURL, lessonXsmallURL: lessonXsmallURL, lessonSmallURL: lessonSmallURL, lessonMediumURL: lessonMediumURL, lessonLargeURL: lessonLargeURL, createdAt: lessonCreatedAt!, updatedAt: lessonUpdatedAt!)
+                    self.lessons.append(lesson)
+                }
+            }
             
-            self.oneCourse = OneCourse(courseId: courseId!, courseName: courseName!, sectionId: sectionId!, sectionName: sectionName!, courseDescription: courseDescription, courseImageURL: imageURL, courseXsmallURL: xsmallURL, courseSmallURL: smallURL, courseMediumURL: mediumURL, courseLargeURL: largeURL, courseCreatedAt: createdAt!, courseUpdatedAt: updatedAt!, commentsCount: commentCount)
+            self.oneCourse = OneCourse(courseId: courseId!, courseName: courseName!, sectionId: sectionId!, sectionName: sectionName!, courseDescription: courseDescription, courseImageURL: imageURL, courseXsmallURL: xsmallURL, courseSmallURL: smallURL, courseMediumURL: mediumURL, courseLargeURL: largeURL, courseCreatedAt: createdAt!, courseUpdatedAt: updatedAt!, commentsCount: commentCount,lessons: self.lessons)
                 
             }
             
@@ -82,7 +101,38 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    // Mark: - Table View Delegate
+    
+    // MARK: - Table view data source
+    
+   func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // #warning Potentially incomplete method implementation.
+        // Return the number of sections.
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete method implementation.
+        // Return the number of rows in the section.
+        
+        //NSLog("Count: \(self.organizations.count)")
+        return 1
+    }
+    
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+       // let cell = tableView.dequeueReusableCellWithIdentifier("Lesson Cell", forIndexPath: indexPath) as UITableViewCell
+          var lessonCell:UITableViewCell = self.lessonTableView.dequeueReusableCellWithIdentifier("Lesson Cell") as UITableViewCell
+        // Configure the cell...
+        lessonCell.textLabel?.text =  self.lessons[indexPath.row].title
+        // cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+        
+        return lessonCell
+    }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        println("You selected cell #\(indexPath.row)!")
+    }
+    
     /*
     // MARK: - Navigation
 

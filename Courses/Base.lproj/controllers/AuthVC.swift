@@ -157,10 +157,7 @@ import UIKit
                     
                 }
                 
-                //4
-                for anOrg in self.organizations {
-                    println("Hey! \(anOrg.name)")
-                }
+                
                 
                 
 

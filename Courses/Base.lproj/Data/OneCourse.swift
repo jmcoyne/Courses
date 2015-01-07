@@ -23,13 +23,15 @@ import UIKit
     private(set) var courseCreatedAt: String
     private(set) var courseUpdatedAt: String
     private(set) var CommentsCount: String
+    private(set) var lessons: [Lesson]
+
     
     // SO right now, the imageURL is just the name of the image just to make it easier
     var courseImage: UIImage {
         return UIImage(named: courseImageURL)!
     }
     
-    init(courseId: String, courseName: String, sectionId: String, sectionName: String, courseDescription: String?, courseImageURL: String?, courseXsmallURL: String?, courseSmallURL: String?, courseMediumURL: String?, courseLargeURL: String?, courseCreatedAt: String, courseUpdatedAt: String, commentsCount: String?) {
+    init(courseId: String, courseName: String, sectionId: String, sectionName: String, courseDescription: String?, courseImageURL: String?, courseXsmallURL: String?, courseSmallURL: String?, courseMediumURL: String?, courseLargeURL: String?, courseCreatedAt: String, courseUpdatedAt: String, commentsCount: String?,lessons:[Lesson]) {
         
         
         self.courseId = courseId
@@ -45,7 +47,8 @@ import UIKit
         self.courseCreatedAt = courseCreatedAt
         self.courseUpdatedAt = courseUpdatedAt
         self.CommentsCount = commentsCount  ?? ""
-        
+        self.lessons = lessons
+
         
 
     }
