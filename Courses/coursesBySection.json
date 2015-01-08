@@ -1,0 +1,80 @@
+{
+    "Design": [
+        {
+            "id": 1,
+            "organization_id": 1,
+            "name": "Test course",
+            "description": "Lorem ipsum",
+            "image": {
+                "url": "https://mzingalmsdev.s3.amazonaws.com/uploads/course/image/1/e8f6c082acf3943642e7e021f2403300_1.jpg",
+                "xsmall": {
+                    "url": "https://mzingalmsdev.s3.amazonaws.com/uploads/course/image/1/xsmall_e8f6c082acf3943642e7e021f2403300_1.jpg"
+                },
+                "small": {
+                    "url": "https://mzingalmsdev.s3.amazonaws.com/uploads/course/image/1/small_e8f6c082acf3943642e7e021f2403300_1.jpg"
+                },
+                "medium": {
+                    "url": "https://mzingalmsdev.s3.amazonaws.com/uploads/course/image/1/medium_e8f6c082acf3943642e7e021f2403300_1.jpg"
+                },
+                "large": {
+                    "url": "https://mzingalmsdev.s3.amazonaws.com/uploads/course/image/1/large_e8f6c082acf3943642e7e021f2403300_1.jpg"
+                }
+            },
+            "created_at": "2015-01-07T01:13:39.584Z",
+            "updated_at": "2015-01-07T01:13:45.289Z",
+            "comments_count": 2,
+            "user_id": 1,
+            "cached_votes_total": 2,
+            "cached_votes_score": 2,
+            "cached_votes_up": 2,
+            "cached_votes_down": 0,
+            "cached_weighted_score": 2,
+            "cached_weighted_total": 2,
+            "cached_weighted_average": 0,
+            "section_id": 1,
+            "media_url": "/Users/adam/src/mzinga/lms/lib/assets/sample.mp4",
+            "panda_video_id": "84c3b20076831c05da25e5ad83c18a14",
+            "encoding_status": "Complete",
+            "panda_video_url": "http://mzingalmsdev.s3.amazonaws.com/e8f6c082acf3943642e7e021f2403300.mp4"
+        }
+    ],
+    "Human Resources": [
+        {
+            "id": 2,
+            "organization_id": 1,
+            "name": "Test course",
+            "description": "Lorem ipsum",
+            "image": {
+                "url": "https://mzingalmsdev.s3.amazonaws.com/uploads/course/image/2/e8f6c082acf3943642e7e021f2403300_1.jpg",
+                "xsmall": {
+                    "url": "https://mzingalmsdev.s3.amazonaws.com/uploads/course/image/2/xsmall_e8f6c082acf3943642e7e021f2403300_1.jpg"
+                },
+                "small": {
+                    "url": "https://mzingalmsdev.s3.amazonaws.com/uploads/course/image/2/small_e8f6c082acf3943642e7e021f2403300_1.jpg"
+                },
+                "medium": {
+                    "url": "https://mzingalmsdev.s3.amazonaws.com/uploads/course/image/2/medium_e8f6c082acf3943642e7e021f2403300_1.jpg"
+                },
+                "large": {
+                    "url": "https://mzingalmsdev.s3.amazonaws.com/uploads/course/image/2/large_e8f6c082acf3943642e7e021f2403300_1.jpg"
+                }
+            },
+            "created_at": "2015-01-07T01:13:43.069Z",
+            "updated_at": "2015-01-07T01:13:45.302Z",
+            "comments_count": 2,
+            "user_id": 2,
+            "cached_votes_total": 2,
+            "cached_votes_score": 2,
+            "cached_votes_up": 2,
+            "cached_votes_down": 0,
+            "cached_weighted_score": 2,
+            "cached_weighted_total": 2,
+            "cached_weighted_average": 0,
+            "section_id": 2,
+            "media_url": "/Users/adam/src/mzinga/lms/lib/assets/sample.mp4",
+            "panda_video_id": "84c3b20076831c05da25e5ad83c18a14",
+            "encoding_status": "Complete",
+            "panda_video_url": "http://mzingalmsdev.s3.amazonaws.com/e8f6c082acf3943642e7e021f2403300.mp4"
+        }
+    ]
+}

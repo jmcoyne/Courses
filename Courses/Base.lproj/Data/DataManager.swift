@@ -11,11 +11,11 @@ import UIKit
 
 class DataManager {
     
-    class func getCoursesDataFromFileWithSuccess(success: ((data: NSData) -> Void)) {
+    class func getCoursesBySectionDataFromFileWithSuccess(success: ((data: NSData) -> Void)) {
         //1
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
             //2
-            let filePath = NSBundle.mainBundle().pathForResource("courses",ofType:"json")
+            let filePath = NSBundle.mainBundle().pathForResource("coursesBySection",ofType:"json")
             NSLog("here's my path \(filePath)")
             var readError:NSError?
             if let data = NSData(contentsOfFile:filePath!,

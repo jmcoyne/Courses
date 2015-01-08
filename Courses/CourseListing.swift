@@ -11,11 +11,12 @@ import UIKit
 
 
 class CourseListing {
-    private(set) var courseId: String
-    private(set) var courseName: String
+    private(set) var id: String
+    private(set) var name: String
     private(set) var sectionId: String
-    private(set) var sectionName: String
-    private(set) var courseDescription: String
+    private(set) var description: String
+    private(set) var mediaURL: String
+    private(set) var videoURL: String
     private(set) var courseImageURL: String
     private(set) var courseXsmallURL: String
     private(set) var courseSmallURL: String
@@ -23,8 +24,9 @@ class CourseListing {
     private(set) var courseLargeURL: String
     private(set) var courseCreatedAt: String
     private(set) var courseUpdatedAt: String
-    private(set) var CommentsCount: String
-     
+    private(set) var commentsCount: String
+
+    
     
     
     // SO right now, the imageURL is just the name of the image just to make it easier
@@ -32,14 +34,15 @@ class CourseListing {
         return UIImage(named: courseImageURL)!
     }
     
-    init(courseId: String, courseName: String, sectionId: String, sectionName: String, courseDescription: String?, courseImageURL: String?, courseXsmallURL: String?, courseSmallURL: String?, courseMediumURL: String?, courseLargeURL: String?, courseCreatedAt: String, courseUpdatedAt: String, commentsCount: String?) {
+    init(id: String, name: String, sectionId: String, description: String?, mediaURL: String, videoURL: String?, courseImageURL: String?, courseXsmallURL: String?, courseSmallURL: String?, courseMediumURL: String?, courseLargeURL: String?, courseCreatedAt: String, courseUpdatedAt: String, commentsCount: String?) {
         
         
-        self.courseId = courseId
-        self.courseName = courseName
+        self.id = id
+        self.name = name
         self.sectionId = sectionId
-        self.sectionName = sectionName
-        self.courseDescription = courseDescription  ?? ""
+        self.description = description  ?? ""
+        self.mediaURL = mediaURL
+        self.videoURL = videoURL ?? ""
         self.courseImageURL = courseImageURL ?? ""
         self.courseXsmallURL = courseXsmallURL ?? ""
         self.courseSmallURL = courseSmallURL ?? ""
@@ -47,8 +50,6 @@ class CourseListing {
         self.courseLargeURL = courseLargeURL ?? ""
         self.courseCreatedAt = courseCreatedAt
         self.courseUpdatedAt = courseUpdatedAt
-        self.CommentsCount = commentsCount  ?? ""
-        
-        
+        self.commentsCount = commentsCount  ?? ""
     }
 }

@@ -32,7 +32,7 @@ class CourseMasterTVC: UITableViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 150
         
-        DataManager.getCoursesDataFromFileWithSuccess { (data) -> Void in
+        DataManager.getCoursesBySectionDataFromFileWithSuccess { (data) -> Void in
             
             //TODO - Get right Organization
             var Sections: [String: String] = ["1": "Design", "2": "Human Resources"]
@@ -51,13 +51,17 @@ class CourseMasterTVC: UITableViewController {
                         var commentCount: String?  = course["comments_count"].stringValue
                         var createdAt: String? = course["created_at"].stringValue
                         var updatedAt: String? = course["updated_at"].stringValue
+                        var mediaURL: String?  = course["media_url"].stringValue
+                        var videoURL: String?  = course["panda_video_url"].stringValue
+
                         var imageURL: String?  = course["url"].stringValue
+
                         var xsmallURL: String? = course["xsmall"]["url"].stringValue
                         var smallURL: String?  = course["small"]["url"].stringValue
                         var mediumURL: String? = course["medium"]["url"].stringValue
                         var largeURL: String?  = course["large"]["url"].stringValue
                         
-                        var oneCourse = CourseListing(courseId: id!, courseName: name!, sectionId: sectionId, sectionName: thisSection, courseDescription: description, courseImageURL: imageURL, courseXsmallURL: xsmallURL, courseSmallURL: smallURL, courseMediumURL: mediumURL, courseLargeURL: largeURL, courseCreatedAt: createdAt!, courseUpdatedAt: updatedAt!, commentsCount: commentCount)
+                        var oneCourse = CourseListing(id: id!, name: name!, sectionId: sectionId,  description: description, mediaURL: mediaURL!, videoURL: videoURL, courseImageURL: imageURL, courseXsmallURL: xsmallURL, courseSmallURL: smallURL, courseMediumURL: mediumURL, courseLargeURL: largeURL, courseCreatedAt: createdAt!, courseUpdatedAt: updatedAt!, commentsCount: commentCount)
                         self.recentCourses.append(oneCourse);
                     }
                    
@@ -98,8 +102,8 @@ class CourseMasterTVC: UITableViewController {
          var course : CourseListing
         course = recentCourses[indexPath.row]
         // Configure the cell...
-        cell.courseTitleLabel.text = course.courseName;
-        cell.courseDescriptionTextView.text    = course.courseDescription
+        cell.courseTitleLabel.text = course.name;
+        cell.courseDescriptionTextView.text    = course.description
         //cell.courseImageView.image = course.courseImage
                //cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         return cell
@@ -168,11 +172,11 @@ class CourseMasterTVC: UITableViewController {
                // let detailVC  = detailNav.topViewController as DetailViewController
                 let detailVC  = (segue.destinationViewController as UINavigationController).topViewController as DetailViewController
                let course   = self.recentCourses[self.tableView!.indexPathForSelectedRow()!.row]
-               detailVC.courseNameLabel?.text = course.courseName
+               detailVC.courseNameLabel?.text = course.name
               // detailVC.oneCourse = course
                 detailVC.title = "Mzinga"
-                NSLog("Course name %@", course.courseName)
-                 NSLog("Course name %@", course.courseId)
+                NSLog("Course name %@", course.name)
+                 NSLog("Course name %@", course.id)
 
 
                 //}

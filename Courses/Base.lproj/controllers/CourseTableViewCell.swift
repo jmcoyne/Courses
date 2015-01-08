@@ -29,8 +29,8 @@ class CourseTableViewCell: UITableViewCell {
     // MARK: - Utility methods
     private func configureCell() {
         //courseImageView.image = oneCourse?.courseImage
-        courseTitleLabel.text = oneCourse?.courseName
-         courseDescriptionTextView.text = oneCourse?.courseDescription
+        courseTitleLabel.text = oneCourse?.name
+         courseDescriptionTextView.text = oneCourse?.description
       //  let courseId  = oneCourse?.courseId
        // NSlog("here is my courseId \(courseId)")
     }
