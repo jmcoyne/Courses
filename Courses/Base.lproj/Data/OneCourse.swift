@@ -24,13 +24,17 @@ import UIKit
     private(set) var courseCreatedAt: String
     private(set) var courseUpdatedAt: String
     private(set) var commentsCount: String
+    private(set) var cachedVotesUp: String
+    private(set) var cachedVotesDown: String
+    
+    
     
     // SO right now, the imageURL is just the name of the image just to make it easier
     var courseImage: UIImage {
         return UIImage(named: courseImageURL)!
     }
     
-    init(id: String, name: String, sectionId: String, description: String?, mediaURL: String, videoURL: String?, courseImageURL: String?, courseXsmallURL: String?, courseSmallURL: String?, courseMediumURL: String?, courseLargeURL: String?, courseCreatedAt: String, courseUpdatedAt: String, commentsCount: String?) {
+    init(id: String, name: String, sectionId: String, description: String?, mediaURL: String, videoURL: String?, courseImageURL: String?, courseXsmallURL: String?, courseSmallURL: String?, courseMediumURL: String?, courseLargeURL: String?, courseCreatedAt: String, courseUpdatedAt: String, commentsCount: String?, cachedVotesUp: String?, cachedVotesDown: String?) {
         
         
         self.id = id
@@ -47,6 +51,8 @@ import UIKit
         self.courseCreatedAt = courseCreatedAt
         self.courseUpdatedAt = courseUpdatedAt
         self.commentsCount = commentsCount  ?? ""
+        self.cachedVotesUp = cachedVotesUp  ?? ""
+        self.cachedVotesDown = cachedVotesDown  ?? ""
         
         
 

@@ -172,7 +172,7 @@ class CourseMasterTVC: UITableViewController {
                // let detailVC  = detailNav.topViewController as DetailViewController
                 let detailVC  = (segue.destinationViewController as UINavigationController).topViewController as DetailViewController
                let course   = self.recentCourses[self.tableView!.indexPathForSelectedRow()!.row]
-               detailVC.courseNameLabel?.text = course.name
+               //detailVC.courseNameLabel?.text = course.name
               // detailVC.oneCourse = course
                 detailVC.title = "Mzinga"
                 NSLog("Course name %@", course.name)

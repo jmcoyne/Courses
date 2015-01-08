@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C81f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2pp-wW-ls3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--AuthVC-->
@@ -191,50 +190,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mzingabee110.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yi6-5v-Mkx">
-                                <rect key="frame" x="245" y="54" width="110" height="110"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPJ-sO-o5t">
-                                <rect key="frame" x="246" y="184" width="109" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9k-QT-CBt">
+                                <rect key="frame" x="36" y="254" width="101" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dq-FQ-9Sf">
-                                <rect key="frame" x="254" y="228" width="93" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Section" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTI-Ei-2tL">
+                                <rect key="frame" x="41" y="299" width="90" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aws-2k-SLL">
-                                <rect key="frame" x="502" y="224" width="72" height="30"/>
-                                <state key="normal" title="+Watchlist">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4K-Dd-Jrg">
+                                <rect key="frame" x="41" y="346" width="46" height="30"/>
+                                <state key="normal" title="Like">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZV-mW-963">
+                                <rect key="frame" x="95" y="346" width="46" height="30"/>
+                                <state key="normal" title="Dislike">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6dq-FQ-9Sf" firstAttribute="top" secondItem="MPJ-sO-o5t" secondAttribute="bottom" constant="23" id="2cp-ZG-eBo"/>
-                            <constraint firstItem="MPJ-sO-o5t" firstAttribute="centerX" secondItem="yi6-5v-Mkx" secondAttribute="centerX" id="5Zw-ea-Hes"/>
-                            <constraint firstItem="aws-2k-SLL" firstAttribute="baseline" secondItem="6dq-FQ-9Sf" secondAttribute="baseline" constant="4" id="7Dh-z2-Ytv"/>
-                            <constraint firstItem="aws-2k-SLL" firstAttribute="bottom" secondItem="6dq-FQ-9Sf" secondAttribute="bottom" constant="9" id="IsI-fb-RrU"/>
-                            <constraint firstAttribute="centerX" secondItem="yi6-5v-Mkx" secondAttribute="centerX" id="XGJ-Ea-etA"/>
-                            <constraint firstItem="yi6-5v-Mkx" firstAttribute="top" secondItem="DEZ-Kx-IbF" secondAttribute="bottom" constant="10" id="hxW-Tb-pFc"/>
-                            <constraint firstItem="MPJ-sO-o5t" firstAttribute="top" secondItem="yi6-5v-Mkx" secondAttribute="bottom" constant="20" id="nDm-uk-elh"/>
-                            <constraint firstItem="aws-2k-SLL" firstAttribute="baseline" secondItem="6dq-FQ-9Sf" secondAttribute="baseline" constant="4" id="rMj-dQ-uXf"/>
-                            <constraint firstItem="aws-2k-SLL" firstAttribute="centerY" secondItem="6dq-FQ-9Sf" secondAttribute="centerY" constant="0.5" id="s7A-jB-iOj"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="aws-2k-SLL" secondAttribute="trailing" constant="10" id="tYk-wW-K5a"/>
-                            <constraint firstItem="aws-2k-SLL" firstAttribute="top" secondItem="6dq-FQ-9Sf" secondAttribute="top" id="tg4-Hq-Ngv"/>
-                            <constraint firstItem="6dq-FQ-9Sf" firstAttribute="top" secondItem="MPJ-sO-o5t" secondAttribute="bottom" constant="23" id="x4d-KW-mpq"/>
-                            <constraint firstItem="MPJ-sO-o5t" firstAttribute="centerX" secondItem="6dq-FQ-9Sf" secondAttribute="centerX" id="xnC-GR-lJC"/>
+                            <constraint firstItem="v9k-QT-CBt" firstAttribute="top" secondItem="DEZ-Kx-IbF" secondAttribute="bottom" constant="310" id="Jxf-gM-5Ty"/>
+                            <constraint firstItem="v9k-QT-CBt" firstAttribute="leading" secondItem="zTI-Ei-2tL" secondAttribute="leading" constant="-5" id="Rwn-9r-MSy"/>
+                            <constraint firstItem="v9k-QT-CBt" firstAttribute="leading" secondItem="HOI-2p-6Ut" secondAttribute="leading" constant="36" id="UCC-Ia-9Y2"/>
+                            <constraint firstItem="v9k-QT-CBt" firstAttribute="top" secondItem="DEZ-Kx-IbF" secondAttribute="bottom" constant="210" id="axb-lz-6IC"/>
+                            <constraint firstItem="zTI-Ei-2tL" firstAttribute="top" secondItem="v9k-QT-CBt" secondAttribute="bottom" constant="24" id="dkQ-P1-iRR"/>
+                            <constraint firstItem="Y4K-Dd-Jrg" firstAttribute="top" secondItem="zTI-Ei-2tL" secondAttribute="bottom" constant="26" id="qE3-dn-rZk"/>
+                            <constraint firstItem="Y4K-Dd-Jrg" firstAttribute="leading" secondItem="zTI-Ei-2tL" secondAttribute="leading" id="wgv-Tu-mRD"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="7Dh-z2-Ytv"/>
-                                <exclude reference="IsI-fb-RrU"/>
-                                <exclude reference="rMj-dQ-uXf"/>
-                                <exclude reference="tg4-Hq-Ngv"/>
+                                <exclude reference="Jxf-gM-5Ty"/>
                             </mask>
                         </variation>
                     </view>
@@ -242,9 +235,10 @@
                         <barButtonItem key="rightBarButtonItem" title="Profile" id="DXi-wl-ZeW"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="courseImageView" destination="yi6-5v-Mkx" id="dQ0-Mg-Zmr"/>
-                        <outlet property="courseNameLabel" destination="6dq-FQ-9Sf" id="mGe-qG-K2S"/>
-                        <outlet property="sectionLabel" destination="MPJ-sO-o5t" id="vP0-Yn-0r6"/>
+                        <outlet property="cachedVotesDownButton" destination="lZV-mW-963" id="QyL-wm-f9t"/>
+                        <outlet property="cachedVotesUpButton" destination="Y4K-Dd-Jrg" id="m1V-a0-ifG"/>
+                        <outlet property="courseNameLabel" destination="v9k-QT-CBt" id="hLb-ud-o9n"/>
+                        <outlet property="courseSectionLabel" destination="zTI-Ei-2tL" id="nBJ-jA-VaT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Di-q9-cM6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -398,7 +392,6 @@
     </scenes>
     <resources>
         <image name="mzingaLogo" width="56" height="55"/>
-        <image name="mzingabee110.jpg" width="110" height="110"/>
         <image name="mzingabee55.jpeg" width="55" height="55"/>
     </resources>
     <inferredMetricsTieBreakers>

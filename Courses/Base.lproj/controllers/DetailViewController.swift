@@ -14,27 +14,22 @@ class DetailViewController: UIViewController {
     
  
     
-    @IBOutlet weak var courseImageView: UIImageView!
-    
-    @IBOutlet weak var sectionLabel: UILabel!
-    
     @IBOutlet weak var courseNameLabel: UILabel!
     
+    @IBOutlet weak var courseSectionLabel: UILabel!
+    @IBOutlet weak var cachedVotesUpButton: UIButton!
+  
+    @IBOutlet weak var cachedVotesDownButton: UIButton!
     var oneCourse: OneCourse?
-        /*{
-        didSet {
-            self.configureView()
-        }
-    }*/
+    var didInitialLayout = false
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         DataManager.getOneCourseDataFromFileWithSuccess { (data) -> Void in
-            
-            
-           
             NSLog("Here we are getting a class")
             let json = JSON(data: data)
             var courseId: String?  = json["course"]["id"].stringValue
@@ -51,11 +46,13 @@ class DetailViewController: UIViewController {
             var mediumURL: String? = json["course"]["image"]["image"]["medium"]["url"].stringValue
             var largeURL: String?  = json["course"]["image"]["image"]["large"]["url"].stringValue
             var sectionId: String?  = json["course"]["section_id"].stringValue
+            var cachedVotesUp: String? = json["course"]["cached_votes_up"].stringValue
+            var cachedVotesDown: String? = json["course"]["cached_votes_down"].stringValue
             
             
 
             
-            self.oneCourse = OneCourse(id: courseId!, name: courseName!, sectionId: sectionId!, description: courseDescription, mediaURL: mediaURL!, videoURL: videoURL, courseImageURL: imageURL,  courseXsmallURL: xsmallURL, courseSmallURL: smallURL, courseMediumURL: mediumURL, courseLargeURL: largeURL, courseCreatedAt: createdAt!, courseUpdatedAt: updatedAt!, commentsCount: commentCount)
+            self.oneCourse = OneCourse(id: courseId!, name: courseName!, sectionId: sectionId!, description: courseDescription, mediaURL: mediaURL!, videoURL: videoURL, courseImageURL: imageURL,  courseXsmallURL: xsmallURL, courseSmallURL: smallURL, courseMediumURL: mediumURL, courseLargeURL: largeURL, courseCreatedAt: createdAt!, courseUpdatedAt: updatedAt!, commentsCount: commentCount, cachedVotesUp: cachedVotesUp, cachedVotesDown: cachedVotesDown)
                 
             }
             
@@ -64,7 +61,7 @@ class DetailViewController: UIViewController {
         
 
         
-        
+       // makeLayout()
         self.configureView()
 
         // Do any additional setup after loading the view.
@@ -75,8 +72,15 @@ class DetailViewController: UIViewController {
     private func configureView() {
         if let course = oneCourse? {
         //courseImageView.image. = oneCourse?.courseImageURL
-        courseNameLabel?.text = course.name
-        sectionLabel?.text = course.description
+       courseNameLabel?.text = course.name
+       courseSectionLabel?.text = course.description
+           
+        cachedVotesUpButton.setTitle(course.cachedVotesUp, forState: UIControlState.Normal)
+        cachedVotesDownButton.setTitle(course.cachedVotesDown, forState: UIControlState.Normal)
+            
+
+            course.cachedVotesUp
+            
             
            //courseNameLabel?.text = "Hey there!"
           //  sectionLabel?.text = "Ho There!"
@@ -89,7 +93,6 @@ class DetailViewController: UIViewController {
     
     // MARK: Embedded AVplayer
     
-    var didInitialLayout = false
     
     override func prefersStatusBarHidden() -> Bool {
         return true
@@ -109,15 +112,33 @@ class DetailViewController: UIViewController {
         let player = AVPlayer(playerItem:item)
         
         let av = AVPlayerViewController()
+       
         av.player = player
         av.view.frame = CGRectMake(10,10,300,200)
         av.view.hidden = true // looks nicer if we don't show until ready
+        av.view.setTranslatesAutoresizingMaskIntoConstraints(false)
         self.addChildViewController(av)
         self.view.addSubview(av.view)
         av.didMoveToParentViewController(self)
         
                
         av.addObserver(self, forKeyPath: "readyForDisplay", options: nil, context: nil)
+         let viewsDictionary = ["view1":av.view]
+        //view1
+        let view1_constraint_H:Array = NSLayoutConstraint.constraintsWithVisualFormat("H:[view1(300)]", options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary)
+        let view1_constraint_V:Array = NSLayoutConstraint.constraintsWithVisualFormat("V:[view1(200)]", options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary)
+        av.view.addConstraints(view1_constraint_H)
+        av.view.addConstraints(view1_constraint_V)
+        
+        //position constraints
+        
+        //views
+        let view_constraint_H:NSArray = NSLayoutConstraint.constraintsWithVisualFormat("H:|-[view1]", options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary)
+        let view_constraint_V:NSArray = NSLayoutConstraint.constraintsWithVisualFormat("V:|-36-[view1]", options: NSLayoutFormatOptions.AlignAllLeft, metrics: nil, views: viewsDictionary)
+        
+        view.addConstraints(view_constraint_H)
+        view.addConstraints(view_constraint_V)
+
         
         return; // just proving you can swap out the player
     }
@@ -129,7 +150,13 @@ class DetailViewController: UIViewController {
         }
     }
     func finishConstructingInterface () {
-        let vc = self.childViewControllers[0] as AVPlayerViewController
+        let vcArray  = self.childViewControllers
+        var vc = AVPlayerViewController()
+        for child in vcArray {
+            if let  thisChild = child as? AVPlayerViewController{
+                vc =  thisChild
+            }
+        }
         if !vc.readyForDisplay {
             return
         }
@@ -137,7 +164,8 @@ class DetailViewController: UIViewController {
         vc.removeObserver(self, forKeyPath:"readyForDisplay")
         vc.view.hidden = false
     }
-
+    
+  
     /*
     // MARK: - Navigation
 
