@@ -59,7 +59,7 @@ import UIKit
         var emailText = self.email.text
         var passwordText = self.password.text
         
-        let urlLogin = NSURL(string: "https://test.lifeplot.com/api/v1/users/sign_in")!
+        let urlLogin = NSURL(string: "http://barbershoplabs.ngrok.com/api/v1/users/sign_in")!
         var req = NSMutableURLRequest(URL: urlLogin)
         
         
@@ -82,9 +82,9 @@ import UIKit
                     NSLog("Response from \(req.URL): \(body)")
                     self.authCallResults = NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments, error: &error) as? NSDictionary
                     NSLog("Auth Call results = %@", self.authCallResults!);
-                    let successMessage = (self.authCallResults?.valueForKeyPath(AUTH_RESULTS_SUCCESS)) as? Int
+                    let successMessage = (self.authCallResults?.valueForKeyPath(AUTH_RESULTS_SUCCESS)) as? String
                     NSLog("Auth Call success = %d", successMessage!)
-                    if successMessage == 1 {
+                    if successMessage == "z3NgdrZjqXngwrumdYi9" {
                         NSLog("We got in!")
                         self.userDidAuthenticate   = true
                          let userEmail = (self.authCallResults?.valueForKeyPath(AUTH_RESULTS_EMAIL)) as? String
