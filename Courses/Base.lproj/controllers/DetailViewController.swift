@@ -18,8 +18,13 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet weak var sectionLabel: UILabel!
     
+    @IBAction func addCommentTouch(sender: AnyObject) {
+        NSLog("You touched the Add Comments Button!")
+    }
+    
     @IBOutlet weak var courseNameLabel: UILabel!
     
+    @IBOutlet weak var commentsHeaderLabel: UILabel!
     @IBOutlet weak var commentsUserName: UILabel!
     @IBOutlet weak var commentsTableView: UITableView!
     var userDictionary = ["1":"John Doe","2":"Suzy Q"]
@@ -28,10 +33,11 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var oneCourse: OneCourse?
     var didInitialLayout = false
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //Get Course data
-        
+        self.commentsHeaderLabel.text = "Comments"
         DataManager.getOneCourseDataFromFileWithSuccess { (data) -> Void in
             
             

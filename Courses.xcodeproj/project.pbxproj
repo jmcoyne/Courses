@@ -48,6 +48,7 @@
 		189EE4B81A431C3000A41937 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EE4B71A431C3000A41937 /* DataManager.swift */; };
 		189EE4BC1A432BB200A41937 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 189EE4BB1A432BB200A41937 /* user.json */; };
 		18AAE87B1A66CA800028F74B /* CommentsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AAE87A1A66CA800028F74B /* CommentsTVCell.swift */; };
+		18AAE87D1A66FA2F0028F74B /* CommentsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AAE87C1A66FA2F0028F74B /* CommentsHeaderView.swift */; };
 		18C7868A1A49F9EB00759DD2 /* courses.json in Resources */ = {isa = PBXBuildFile; fileRef = 18C786881A49F9EB00759DD2 /* courses.json */; };
 		18C7868B1A49F9EB00759DD2 /* CourseListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C786891A49F9EB00759DD2 /* CourseListing.swift */; };
 		18CF98491A30A9C800915CBF /* APIFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF98481A30A9C800915CBF /* APIFetcher.swift */; };
@@ -110,6 +111,7 @@
 		189EE4B71A431C3000A41937 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = Base.lproj/Data/DataManager.swift; sourceTree = "<group>"; };
 		189EE4BB1A432BB200A41937 /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
 		18AAE87A1A66CA800028F74B /* CommentsTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentsTVCell.swift; path = Base.lproj/controllers/CommentsTVCell.swift; sourceTree = "<group>"; };
+		18AAE87C1A66FA2F0028F74B /* CommentsHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentsHeaderView.swift; path = Views/CommentsHeaderView.swift; sourceTree = "<group>"; };
 		18C786881A49F9EB00759DD2 /* courses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = courses.json; sourceTree = "<group>"; };
 		18C786891A49F9EB00759DD2 /* CourseListing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseListing.swift; sourceTree = "<group>"; };
 		18CF98481A30A9C800915CBF /* APIFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIFetcher.swift; path = Courses/Base.lproj/APIFetcher/APIFetcher.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				18CF984A1A30A9CF00915CBF /* APIFetcher */,
 				180815501A2E4B6900C75ABA /* AppDelegate.swift */,
 				180815541A2E4B6900C75ABA /* Main.storyboard */,
+				18AAE87E1A66FA3E0028F74B /* Views */,
 				18850F511A2F516F00D146F1 /* Controllers */,
 				180815571A2E4B6900C75ABA /* Images.xcassets */,
 				180815591A2E4B6900C75ABA /* LaunchScreen.xib */,
@@ -243,6 +246,14 @@
 				180B05DE1A38C7ED008AAD15 /* DetailViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		18AAE87E1A66FA3E0028F74B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18AAE87C1A66FA2F0028F74B /* CommentsHeaderView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		18CF984A1A30A9CF00915CBF /* APIFetcher */ = {
@@ -389,6 +400,7 @@
 				18C7868B1A49F9EB00759DD2 /* CourseListing.swift in Sources */,
 				180B05DD1A38C78A008AAD15 /* CourseMasterTVC.swift in Sources */,
 				180B05DF1A38C7ED008AAD15 /* DetailViewController.swift in Sources */,
+				18AAE87D1A66FA2F0028F74B /* CommentsHeaderView.swift in Sources */,
 				185A21B31A5D8DAE0022DEAC /* CourseAVPlayer.swift in Sources */,
 				1872B5731A420C7000CAA989 /* User.swift in Sources */,
 				18AAE87B1A66CA800028F74B /* CommentsTVCell.swift in Sources */,
