@@ -10,27 +10,28 @@ import Foundation
 import UIKit
 
 @objc class OneCourse {
-    private(set) var id: String
-    private(set) var name: String
-    private(set) var sectionId: String
-    private(set) var description: String
-    private(set) var mediaURL: String
-    private(set) var videoURL: String
-    private(set) var courseImageURL: String
-    private(set) var courseXsmallURL: String
-    private(set) var courseSmallURL: String
-    private(set) var courseMediumURL: String
-    private(set) var courseLargeURL: String
-    private(set) var courseCreatedAt: String
-    private(set) var courseUpdatedAt: String
-    private(set) var commentsCount: String
+    let id: String
+    let name: String
+    let sectionId: String
+    let description: String
+    let mediaURL: String
+    let videoURL: String
+    let courseImageURL: String
+    let courseXsmallURL: String
+    let courseSmallURL: String
+    let courseMediumURL: String
+    let courseLargeURL: String
+    let courseCreatedAt: String
+    let courseUpdatedAt: String
+    let commentsCount: String
+    let comments = [Comment]()
     
     // SO right now, the imageURL is just the name of the image just to make it easier
     var courseImage: UIImage {
         return UIImage(named: courseImageURL)!
     }
     
-    init(id: String, name: String, sectionId: String, description: String?, mediaURL: String, videoURL: String?, courseImageURL: String?, courseXsmallURL: String?, courseSmallURL: String?, courseMediumURL: String?, courseLargeURL: String?, courseCreatedAt: String, courseUpdatedAt: String, commentsCount: String?) {
+    init(id: String, name: String, sectionId: String, description: String?, mediaURL: String, videoURL: String?, courseImageURL: String?, courseXsmallURL: String?, courseSmallURL: String?, courseMediumURL: String?, courseLargeURL: String?, courseCreatedAt: String, courseUpdatedAt: String, commentsCount: String?, comments:[Comment]) {
         
         
         self.id = id

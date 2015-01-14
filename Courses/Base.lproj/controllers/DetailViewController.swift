@@ -10,7 +10,7 @@ import UIKit
 import AVKit
 import AVFoundation
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
  
     
@@ -20,16 +20,17 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var courseNameLabel: UILabel!
     
+    @IBOutlet weak var commentsUserName: UILabel!
+    @IBOutlet weak var commentsTableView: UITableView!
+    var userDictionary = ["1":"John Doe","2":"Suzy Q"]
+    
+    var comments = [Comment]()
     var oneCourse: OneCourse?
-        /*{
-        didSet {
-            self.configureView()
-        }
-    }*/
+    var didInitialLayout = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //Get Course data
         
         DataManager.getOneCourseDataFromFileWithSuccess { (data) -> Void in
             
@@ -52,10 +53,23 @@ class DetailViewController: UIViewController {
             var largeURL: String?  = json["course"]["image"]["image"]["large"]["url"].stringValue
             var sectionId: String?  = json["course"]["section_id"].stringValue
             
-            
+            if let commentArray = json["course"]["comments"].arrayValue {
+                
+                for commentDict in commentArray {
+                    var commentId: String? = commentDict["id"].stringValue
+                    var commentUserId: String? = commentDict["user_id"].stringValue
+                    var commentBody: String? = commentDict["body"].stringValue
+                    var commentCreatedAt: String? = commentDict["created_at"].stringValue
+                    var commentUpdatedAt: String? = commentDict["updated_at"].stringValue
+                    
+                    var comment = Comment(id: commentId!, userId: commentUserId!, body: commentBody, createdAt: commentCreatedAt, updatedAt: commentUpdatedAt)
+                    self.comments.append(comment)
+                    
+                }
+                
 
             
-            self.oneCourse = OneCourse(id: courseId!, name: courseName!, sectionId: sectionId!, description: courseDescription, mediaURL: mediaURL!, videoURL: videoURL, courseImageURL: imageURL,  courseXsmallURL: xsmallURL, courseSmallURL: smallURL, courseMediumURL: mediumURL, courseLargeURL: largeURL, courseCreatedAt: createdAt!, courseUpdatedAt: updatedAt!, commentsCount: commentCount)
+                self.oneCourse = OneCourse(id: courseId!, name: courseName!, sectionId: sectionId!, description: courseDescription, mediaURL: mediaURL!, videoURL: videoURL, courseImageURL: imageURL,  courseXsmallURL: xsmallURL, courseSmallURL: smallURL, courseMediumURL: mediumURL, courseLargeURL: largeURL, courseCreatedAt: createdAt!, courseUpdatedAt: updatedAt!, commentsCount: commentCount, comments:self.comments)
                 
             }
             
@@ -63,23 +77,22 @@ class DetailViewController: UIViewController {
         
         
 
-        
-        
+        //Set up table subview
+
+       
+
         self.configureView()
 
         // Do any additional setup after loading the view.
     }
-    
+    }
     
 
-    private func configureView() {
+    func configureView() {
         if let course = oneCourse? {
         //courseImageView.image. = oneCourse?.courseImageURL
-        courseNameLabel?.text = course.name
-        sectionLabel?.text = course.description
-            
-           //courseNameLabel?.text = "Hey there!"
-          //  sectionLabel?.text = "Ho There!"
+            courseNameLabel?.text = course.name
+            sectionLabel?.text = course.description
         }
     }
     override func didReceiveMemoryWarning() {
@@ -89,7 +102,7 @@ class DetailViewController: UIViewController {
     
     // MARK: Embedded AVplayer
     
-    var didInitialLayout = false
+    
     
     override func prefersStatusBarHidden() -> Bool {
         return true
@@ -98,6 +111,7 @@ class DetailViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         if !self.didInitialLayout {
             self.didInitialLayout = true
+             self.configureView()
             self.setUpChild()
         }
     }
@@ -115,8 +129,6 @@ class DetailViewController: UIViewController {
         self.addChildViewController(av)
         self.view.addSubview(av.view)
         av.didMoveToParentViewController(self)
-        
-               
         av.addObserver(self, forKeyPath: "readyForDisplay", options: nil, context: nil)
         
         return; // just proving you can swap out the player
@@ -137,7 +149,34 @@ class DetailViewController: UIViewController {
         vc.removeObserver(self, forKeyPath:"readyForDisplay")
         vc.view.hidden = false
     }
-
+    //mark: - Table View Protocols
+    
+  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("Comment Cell", forIndexPath: indexPath) as UITableViewCell
+        
+        // Configure the cell...
+        cell.detailTextLabel?.text =  self.comments[indexPath.row].body
+    
+        cell.textLabel?.text = self.userDictionary[self.comments[indexPath.row].userId]
+    
+        // cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+        
+        return cell
+    }
+    func tableView(tableView: UITableView!, heightForRowAtIndexPath indexPath: NSIndexPath!) -> CGFloat {
+        return 44
+    }
+    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+        println("SELECTED INDEX /(indexPath.row)")
+    }
+    func tableView(tableView: UITableView,
+        numberOfRowsInSection section: Int) -> Int {
+           return self.comments.count
+    }
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+       
+        return "Comments"
+    }
     /*
     // MARK: - Navigation
 

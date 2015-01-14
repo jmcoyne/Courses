@@ -37,6 +37,7 @@
 		184D6BEB1A379CDB00C93648 /* OneCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184D6BEA1A379CDB00C93648 /* OneCourse.swift */; };
 		185A21B01A5D732A0022DEAC /* coursesBySection.json in Resources */ = {isa = PBXBuildFile; fileRef = 185A21AF1A5D732A0022DEAC /* coursesBySection.json */; };
 		185A21B31A5D8DAE0022DEAC /* CourseAVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185A21B21A5D8DAE0022DEAC /* CourseAVPlayer.swift */; };
+		186922CF1A66BF2200759BF8 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186922CE1A66BF2200759BF8 /* Comment.swift */; };
 		186C69DC1A38A74600078E68 /* TraitOverrideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186C69DB1A38A74600078E68 /* TraitOverrideViewController.swift */; };
 		186C69DE1A38A80100078E68 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186C69DD1A38A80100078E68 /* SplitViewController.swift */; };
 		1872B5711A420C4D00CAA989 /* Membership.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872B5701A420C4D00CAA989 /* Membership.swift */; };
@@ -46,6 +47,7 @@
 		18850F501A2F516600D146F1 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18850F4F1A2F516600D146F1 /* AuthVC.swift */; };
 		189EE4B81A431C3000A41937 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EE4B71A431C3000A41937 /* DataManager.swift */; };
 		189EE4BC1A432BB200A41937 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 189EE4BB1A432BB200A41937 /* user.json */; };
+		18AAE87B1A66CA800028F74B /* CommentsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AAE87A1A66CA800028F74B /* CommentsTVCell.swift */; };
 		18C7868A1A49F9EB00759DD2 /* courses.json in Resources */ = {isa = PBXBuildFile; fileRef = 18C786881A49F9EB00759DD2 /* courses.json */; };
 		18C7868B1A49F9EB00759DD2 /* CourseListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C786891A49F9EB00759DD2 /* CourseListing.swift */; };
 		18CF98491A30A9C800915CBF /* APIFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF98481A30A9C800915CBF /* APIFetcher.swift */; };
@@ -97,6 +99,7 @@
 		184D6BEA1A379CDB00C93648 /* OneCourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OneCourse.swift; path = Base.lproj/Data/OneCourse.swift; sourceTree = "<group>"; };
 		185A21AF1A5D732A0022DEAC /* coursesBySection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = coursesBySection.json; sourceTree = "<group>"; };
 		185A21B21A5D8DAE0022DEAC /* CourseAVPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CourseAVPlayer.swift; path = Base.lproj/controllers/CourseAVPlayer.swift; sourceTree = "<group>"; };
+		186922CE1A66BF2200759BF8 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comment.swift; path = Base.lproj/Data/Comment.swift; sourceTree = "<group>"; };
 		186C69DB1A38A74600078E68 /* TraitOverrideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraitOverrideViewController.swift; sourceTree = "<group>"; };
 		186C69DD1A38A80100078E68 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		1872B5701A420C4D00CAA989 /* Membership.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Membership.swift; path = Base.lproj/Data/Membership.swift; sourceTree = "<group>"; };
@@ -106,6 +109,7 @@
 		18850F4F1A2F516600D146F1 /* AuthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthVC.swift; path = Base.lproj/controllers/AuthVC.swift; sourceTree = "<group>"; };
 		189EE4B71A431C3000A41937 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = Base.lproj/Data/DataManager.swift; sourceTree = "<group>"; };
 		189EE4BB1A432BB200A41937 /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
+		18AAE87A1A66CA800028F74B /* CommentsTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentsTVCell.swift; path = Base.lproj/controllers/CommentsTVCell.swift; sourceTree = "<group>"; };
 		18C786881A49F9EB00759DD2 /* courses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = courses.json; sourceTree = "<group>"; };
 		18C786891A49F9EB00759DD2 /* CourseListing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseListing.swift; sourceTree = "<group>"; };
 		18CF98481A30A9C800915CBF /* APIFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIFetcher.swift; path = Courses/Base.lproj/APIFetcher/APIFetcher.swift; sourceTree = "<group>"; };
@@ -218,6 +222,7 @@
 				1872B5721A420C7000CAA989 /* User.swift */,
 				1872B5761A4214DE00CAA989 /* SwiftyJSON.swift */,
 				1872B5701A420C4D00CAA989 /* Membership.swift */,
+				186922CE1A66BF2200759BF8 /* Comment.swift */,
 				1872B5741A420CCF00CAA989 /* Organization.swift */,
 				189EE4B71A431C3000A41937 /* DataManager.swift */,
 			);
@@ -228,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				186C69DD1A38A80100078E68 /* SplitViewController.swift */,
+				18AAE87A1A66CA800028F74B /* CommentsTVCell.swift */,
 				185A21B21A5D8DAE0022DEAC /* CourseAVPlayer.swift */,
 				186C69DB1A38A74600078E68 /* TraitOverrideViewController.swift */,
 				18850F4F1A2F516600D146F1 /* AuthVC.swift */,
@@ -377,6 +383,7 @@
 				180815511A2E4B6900C75ABA /* AppDelegate.swift in Sources */,
 				186C69DC1A38A74600078E68 /* TraitOverrideViewController.swift in Sources */,
 				1872B5771A4214DE00CAA989 /* SwiftyJSON.swift in Sources */,
+				186922CF1A66BF2200759BF8 /* Comment.swift in Sources */,
 				184D6BEB1A379CDB00C93648 /* OneCourse.swift in Sources */,
 				18CF98491A30A9C800915CBF /* APIFetcher.swift in Sources */,
 				18C7868B1A49F9EB00759DD2 /* CourseListing.swift in Sources */,
@@ -384,6 +391,7 @@
 				180B05DF1A38C7ED008AAD15 /* DetailViewController.swift in Sources */,
 				185A21B31A5D8DAE0022DEAC /* CourseAVPlayer.swift in Sources */,
 				1872B5731A420C7000CAA989 /* User.swift in Sources */,
+				18AAE87B1A66CA800028F74B /* CommentsTVCell.swift in Sources */,
 				182AD52F1A37979A006E96B6 /* CourseTableViewCell.swift in Sources */,
 				186C69DE1A38A80100078E68 /* SplitViewController.swift in Sources */,
 				1872B5711A420C4D00CAA989 /* Membership.swift in Sources */,
