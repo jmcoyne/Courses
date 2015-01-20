@@ -9,6 +9,10 @@ import UIKit
 
 class CourseMasterTVC: UITableViewController {
      var recentCourses = [CourseListing]()
+     var watchlist = [CourseListing]()
+     var sectionList = [Section]()
+    
+
     //var organizationId = String()
     
 
@@ -30,6 +34,34 @@ class CourseMasterTVC: UITableViewController {
         
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 150
+        
+        // Get the list of sections:
+        
+        DataManager.getSectionDataFromFileWithSuccess { (data) -> Void in
+            
+          
+            
+            let json = JSON(data: data)
+            if let sectionArray  = json["sections"].arrayValue{
+            
+            for aSection in sectionArray {
+
+            var id: String?  = aSection["id"].stringValue
+            var name: String?  = aSection["name"].stringValue
+            var createdAt: String? = aSection["created_at"].stringValue
+            var updatedAt: String? = aSection["updated_at"].stringValue
+            var imageURL: String?  = aSection["url"].stringValue
+            var xsmallURL: String? = aSection["xsmall"]["url"].stringValue
+            var smallURL: String?  = aSection["small"]["url"].stringValue
+            var mediumURL: String? = aSection["medium"]["url"].stringValue
+            var largeURL: String?  = aSection["large"]["url"].stringValue
+            
+            var oneSection = Section(id: id!, name: name!, imageURL: imageURL,  xsmallURL: xsmallURL, smallURL: smallURL, mediumURL: mediumURL, largeURL: largeURL, createdAt: createdAt!, updatedAt: updatedAt!)
+            self.sectionList.append(oneSection);
+            }
+            }}
+
+        //Get the list of classes by section
         
         DataManager.getCoursesBySectionDataFromFileWithSuccess { (data) -> Void in
             
@@ -71,7 +103,37 @@ class CourseMasterTVC: UITableViewController {
             
         }
 
-     
+     //Get list of Watchlist classes
+        
+   /*     DataManager.getWatchlistCourseDataFromFileWithSuccess { (data) -> Void in
+            
+            //TODO - Get section set up
+            var Sections: [String: String] = ["1": "Design", "2": "Human Resources"]
+            println("SwiftyJSON: Here is the sections section")
+            let json = JSON(data: data)
+            
+           
+                var id: String?  = json["watchlist_items"]["id"].stringValue
+                var sectionId: String?  = json["watchlist_items"]["section_id"].stringValue
+                var name: String?  = json["watchlist_items"]["name"].stringValue
+                var description: String?  = json["watchlist_items"]["description"].stringValue
+                var commentCount: String?  = json["watchlist_items"]["comments_count"].stringValue
+                var createdAt: String? = json["watchlist_items"]["created_at"].stringValue
+                var updatedAt: String? = json["watchlist_items"]["updated_at"].stringValue
+                var mediaURL: String?  = json["watchlist_items"]["media_url"].stringValue
+                var videoURL: String?  = json["watchlist_items"]["panda_video_url"].stringValue
+                        
+                var imageURL: String?  = json["watchlist_items"]["url"].stringValue
+                        
+                var xsmallURL: String? = json["watchlist_items"]["xsmall"]["url"].stringValue
+                var smallURL: String?  = json["watchlist_items"]["small"]["url"].stringValue
+                var mediumURL: String? = json["watchlist_items"]["medium"]["url"].stringValue
+                var largeURL: String?  = json["watchlist_items"]["large"]["url"].stringValue
+                        
+                var oneCourse = CourseListing(id: id!, name: name!, sectionId: sectionId!,  description: description, mediaURL: mediaURL!, videoURL: videoURL, courseImageURL: imageURL, courseXsmallURL: xsmallURL, courseSmallURL: smallURL, courseMediumURL: mediumURL, courseLargeURL: largeURL, courseCreatedAt: createdAt!, courseUpdatedAt: updatedAt!, commentsCount: commentCount)
+                self.watchlist.append(oneCourse);
+        } */
+
         
         self.tableView.reloadData()
     }
@@ -86,7 +148,7 @@ class CourseMasterTVC: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 1
+        return self.sectionList.count
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

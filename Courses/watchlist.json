@@ -1,0 +1,56 @@
+{
+    "watchlist_items": [
+        {
+            "id": 1,
+            "name": "Test course",
+            "description": "Lorem ipsum",
+            "section_id": 1,
+            "user_id": 1,
+            "media_url": "/Users/adam/src/mzinga/lms/lib/assets/sample.mp4",
+            "panda_video_url": "http://mzingalmsdev.s3.amazonaws.com/e8f6c082acf3943642e7e021f2403300.mp4",
+            "comments_count": 2,
+            "cached_votes_up": 2,
+            "cached_votes_down": 0,
+            "image": {
+                "image": {
+                    "url": "https://mzingalmsdev.s3.amazonaws.com/uploads/course/image/1/e8f6c082acf3943642e7e021f2403300_1.jpg",
+                    "xsmall": {
+                        "url": "https://mzingalmsdev.s3.amazonaws.com/uploads/course/image/1/xsmall_e8f6c082acf3943642e7e021f2403300_1.jpg"
+                    },
+                    "small": {
+                        "url": "https://mzingalmsdev.s3.amazonaws.com/uploads/course/image/1/small_e8f6c082acf3943642e7e021f2403300_1.jpg"
+                    },
+                    "medium": {
+                        "url": "https://mzingalmsdev.s3.amazonaws.com/uploads/course/image/1/medium_e8f6c082acf3943642e7e021f2403300_1.jpg"
+                    },
+                    "large": {
+                        "url": "https://mzingalmsdev.s3.amazonaws.com/uploads/course/image/1/large_e8f6c082acf3943642e7e021f2403300_1.jpg"
+                    }
+                }
+            },
+            "tags": [],
+            "created_at": "2015-01-07T01:13:39.584Z",
+            "updated_at": "2015-01-07T01:13:45.289Z",
+            "comments": [
+                {
+                    "id": 1,
+                    "user_id": 1,
+                    "body": "Lorem ipsum",
+                    "created_at": "2015-01-07T01:13:45.280Z",
+                    "updated_at": "2015-01-07T01:13:45.280Z"
+                },
+                {
+                    "id": 2,
+                    "user_id": 2,
+                    "body": "Lorem ipsum",
+                    "created_at": "2015-01-07T01:13:45.287Z",
+                    "updated_at": "2015-01-07T01:13:45.287Z"
+                }
+            ],
+            "user_ids": [
+                2,
+                1
+            ]
+        }
+    ]
+}
