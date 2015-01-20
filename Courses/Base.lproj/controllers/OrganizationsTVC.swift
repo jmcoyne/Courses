@@ -9,7 +9,7 @@
 import UIKit
 
 class OrganizationsTVC: UITableViewController {
-    // TODO: - Create an organization model
+   
    var organizations = [Organization]()
     
     

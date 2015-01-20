@@ -89,12 +89,22 @@ import UIKit
                         self.userDidAuthenticate   = true
                          let userEmail = (self.authCallResults?.valueForKeyPath(AUTH_RESULTS_EMAIL)) as? String
                         NSLog("My email is %@", userEmail!)
+                        let userFirstName = (self.authCallResults?.valueForKeyPath(AUTH_RESULTS_FIRST_NAME)) as? String
+                        let userLastName = (self.authCallResults?.valueForKeyPath(AUTH_RESULTS_LAST_NAME)) as? String
+                        let userId = (self.authCallResults?.valueForKeyPath(AUTH_RESULTS_ID)) as? Int
+                        let userAvatarURL = (self.authCallResults?.valueForKeyPath(AUTH_RESULTS_AVATAR_URL)) as? String
                         let userAuthToken = (self.authCallResults?.valueForKeyPath(AUTH_RESULTS_AUTH_TOKEN)) as? String
                           NSLog("My authToken is %@", userAuthToken!)
                                                self.defaults.setObject(userEmail, forKey: "email")
-                         self.defaults.setObject(userAuthToken, forKey: "authToken")
+                        self.defaults.setObject(userAuthToken, forKey: "authToken")
+                        self.defaults.setObject(userEmail, forKey: "email")
+                        self.defaults.setObject(userFirstName, forKey: "firstName")
+                        self.defaults.setObject(userLastName, forKey: "lastName")
+                        self.defaults.setObject(userAvatarURL, forKey: "avatarURL")
+                        self.defaults.setObject(userId, forKey: "id")
+
                         
-                         self.defaults.synchronize()
+                        // self.defaults.synchronize()
                         //TODO Get user info, specifically, check for organizations
                          self.setUserProperties()
                                              }
